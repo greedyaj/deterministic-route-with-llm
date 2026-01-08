@@ -18,21 +18,25 @@ import type { RealtimeAgent } from '@openai/agents/realtime';
 import { useTranscript } from "@/app/contexts/TranscriptContext";
 import { useEvent } from "@/app/contexts/EventContext";
 import { useRealtimeSession } from "./hooks/useRealtimeSession";
+import { buildSessionToolUpdateEvent } from "@/app/lib/realtimeSessionTools";
 import { createModerationGuardrail } from "@/app/agentConfigs/guardrails";
 
 // Agent configs
 import { allAgentSets, defaultAgentSetKey } from "@/app/agentConfigs";
 import { customerServiceRetailScenario } from "@/app/agentConfigs/customerServiceRetail";
 import { chatSupervisorScenario } from "@/app/agentConfigs/chatSupervisor";
+import { deterministicRouterScenario } from "@/app/agentConfigs/deterministicRouter";
 import { customerServiceRetailCompanyName } from "@/app/agentConfigs/customerServiceRetail";
 import { chatSupervisorCompanyName } from "@/app/agentConfigs/chatSupervisor";
 import { simpleHandoffScenario } from "@/app/agentConfigs/simpleHandoff";
+import { routerToolDefinition } from "@/app/agentConfigs/deterministicRouter/tools";
 
 // Map used by connect logic for scenarios defined via the SDK.
 const sdkScenarioMap: Record<string, RealtimeAgent[]> = {
   simpleHandoff: simpleHandoffScenario,
   customerServiceRetail: customerServiceRetailScenario,
   chatSupervisor: chatSupervisorScenario,
+  deterministicRouter: deterministicRouterScenario,
 };
 
 import useAudioDownload from "./hooks/useAudioDownload";
@@ -131,6 +135,11 @@ function App() {
     }
   };
 
+  const handleSessionToolUpdate = (tools: any[]) => {
+    const event = buildSessionToolUpdateEvent(tools);
+    sendClientEvent(event, "session_update_tools");
+  };
+
   useHandleSessionHistory();
 
   useEffect(() => {
@@ -221,11 +230,16 @@ function App() {
           getEphemeralKey: async () => EPHEMERAL_KEY,
           initialAgents: reorderedAgents,
           audioElement: sdkAudioElement,
+          onUpdateSessionTools: handleSessionToolUpdate,
           outputGuardrails: [guardrail],
           extraContext: {
             addTranscriptBreadcrumb,
           },
         });
+
+        if (agentSetKey === "deterministicRouter") {
+          handleSessionToolUpdate([routerToolDefinition]);
+        }
       } catch (err) {
         console.error("Error connecting via SDK:", err);
         setSessionStatus("DISCONNECTED");
