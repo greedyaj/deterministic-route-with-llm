@@ -2,7 +2,7 @@
 
 ## Phase 1: Define Data Shapes
 1. Define the tool registry schema (id, name, description, tags, keywords, examples, parameters). (done)
-2. Define the router request/response schema (utterance, context, language -> intent, tools[], fallback). (done)
+2. Define the router request/response schema (intent, optional utterance, context, language -> intent, tools[], fallback). (done)
 3. Decide canonical metadata rules (how tags/keywords/examples are authored and reviewed). (done)
 
 ## Phase 2: Project Structure
@@ -22,7 +22,7 @@
 13. Define how the router loads and refreshes the index at runtime. (done)
 
 ## Phase 5: RT LLM Orchestration
-14. Define the orchestration contract: RT LLM must call router before any other tools. (done)
+14. Define the orchestration contract: RT LLM calls router on intent changes or when no tool list is active. (done)
 15. Define how the tool subset is injected into the RT LLM context. (done)
 16. Define how to handle multi-intent inputs (return multiple clusters or ask clarifying). (done)
 

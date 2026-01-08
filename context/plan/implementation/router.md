@@ -1,10 +1,11 @@
 # Router Component (Design + Plan)
 
 ## Purpose
-Deterministically select a small subset of tools (max 20) based on user intent, without using an LLM.
+Deterministically select a small subset of tools (max 20) based on an intent phrase, without using an LLM.
 
 ## Inputs
-- Utterance (string)
+- Intent phrase (string, distilled by the RT LLM)
+- Optional raw utterance (string, for logging)
 - Optional context summary
 - Optional language
 

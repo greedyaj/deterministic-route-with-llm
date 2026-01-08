@@ -15,9 +15,13 @@ export const routerToolDefinition: Tool = {
   parameters: {
     type: "object",
     properties: {
+      intent: {
+        type: "string",
+        description: "Short intent phrase distilled from the user request.",
+      },
       utterance: {
         type: "string",
-        description: "The user request to route.",
+        description: "Optional raw user request (for logging only).",
       },
       context: {
         type: "string",
@@ -28,7 +32,7 @@ export const routerToolDefinition: Tool = {
         description: "Optional user language hint.",
       },
     },
-    required: ["utterance"],
+    required: ["intent"],
     additionalProperties: false,
   },
 };
@@ -66,6 +70,7 @@ export const routerTool = tool({
       updateSessionTools(sessionTools);
       context.allowedToolNames = response.tools.map((toolItem) => toolItem.name);
     }
+    context.activeIntent = response.intent;
     if (typeof setRouterStatus === "function") {
       setRouterStatus({
         intent: response.intent,
@@ -86,6 +91,7 @@ export const dummyTools = registry.tools.map((entry) =>
     execute: async (input, details) => {
       const context = details?.context as any;
       const allowedToolNames = context?.allowedToolNames as string[] | undefined;
+
       if (!Array.isArray(allowedToolNames) || allowedToolNames.length === 0) {
         return { error: "Router has not been called yet." };
       }

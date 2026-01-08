@@ -71,11 +71,17 @@ export function useHandleSessionHistory() {
     const lastFunctionCall = extractFunctionCallByName(functionCall.name, details?.context?.history);
     const function_name = lastFunctionCall?.name;
     const function_args = lastFunctionCall?.arguments;
+    const parsedArgs = maybeParseJson(function_args);
 
-    addTranscriptBreadcrumb(
-      `function call: ${function_name}`,
-      function_args
-    );    
+    let title = `function call: ${function_name}`;
+    if (function_name === "router" && parsedArgs && typeof parsedArgs.intent === "string") {
+      const intent = parsedArgs.intent.trim();
+      if (intent) {
+        title = `${title} (intent: ${intent})`;
+      }
+    }
+
+    addTranscriptBreadcrumb(title, function_args);
 
     if (function_name && function_name !== "router") {
       addTranscriptBreadcrumb(`tool selected by model: ${function_name}`);
@@ -87,7 +93,9 @@ export function useHandleSessionHistory() {
     const functionName = lastFunctionCall?.name;
     let title = `function call result: ${functionName}`;
     if (functionName === "router" && parsedResult && Array.isArray(parsedResult.tools)) {
-      title = `${title} (tools: ${parsedResult.tools.length})`;
+      const toolsCount = parsedResult.tools.length;
+      const intent = typeof parsedResult.intent === "string" ? parsedResult.intent.trim() : "";
+      title = intent ? `${title} (intent: ${intent} | tools: ${toolsCount})` : `${title} (tools: ${toolsCount})`;
     }
     addTranscriptBreadcrumb(title, parsedResult);
   }

@@ -33,7 +33,7 @@ export function evaluateRouterOnRegistry(
   for (const tool of registry.tools) {
     for (const utterance of tool.examples) {
       totalUtterances += 1;
-      const response = routeTools({ utterance }, registry);
+      const response = routeTools({ intent: utterance, utterance }, registry);
       totalReturned += response.tools.length;
       const rank = response.tools.findIndex((candidate) => candidate.name === tool.name);
       const matched = rank >= 0;

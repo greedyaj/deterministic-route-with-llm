@@ -1,11 +1,11 @@
 # RT LLM Orchestration (Design + Plan)
 
 ## Purpose
-Ensure the RT LLM always calls the router first and only sees a curated subset of tools (max 20).
+Ensure the RT LLM uses the router on intent changes and only sees a curated subset of tools (max 20).
 
 ## Rules
 - Router is the only tool visible initially.
-- RT LLM must call router before any other tool.
+- RT LLM calls router when the intent changes or when no tool list is active.
 - Tool subset injected into RT LLM context after routing.
 
 ## Orchestration Contract
@@ -13,6 +13,7 @@ Ensure the RT LLM always calls the router first and only sees a curated subset o
 - On router response:
   - Replace tool list with routed tools.
   - Update instructions to reflect the available tools.
+  - Persist the routed intent for comparison with new user intents.
 - If router fallback is `clarify`, RT LLM asks a clarifying question and re-calls router.
 - If router fallback is `general`, RT LLM responds without tool calls.
 

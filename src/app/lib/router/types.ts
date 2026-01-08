@@ -3,7 +3,8 @@ import { ToolParameters } from "../../types";
 export type RouterFallback = "none" | "clarify" | "general";
 
 export interface RouterRequest {
-  utterance: string;
+  intent: string;
+  utterance?: string;
   context?: string;
   language?: string;
 }

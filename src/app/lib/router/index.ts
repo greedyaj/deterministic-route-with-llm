@@ -7,9 +7,17 @@ import { deriveIntent } from "./intent";
 import { buildToolIndex } from "../registry/indexer";
 
 export function routeTools(request: RouterRequest, registry: ToolRegistry): RouterResponse {
+  const query = (request.intent ?? request.utterance ?? "").trim();
+  if (!query) {
+    return {
+      intent: "",
+      tools: [],
+      fallback: "clarify",
+    };
+  }
   const index = buildToolIndex(registry);
   const scored = index.entries.map((tool) => {
-    const scoreResult = scoreToolMatch(request.utterance, tool);
+    const scoreResult = scoreToolMatch(query, tool);
     return {
       ...scoreResult,
       tagMatchCount: scoreResult.breakdown.tagMatches,
@@ -37,9 +45,9 @@ export function routeTools(request: RouterRequest, registry: ToolRegistry): Rout
 
   const topScore = ranked[0]?.score;
   const topTool = ranked.length > 0 ? index.entries.find((tool) => tool.id === ranked[0].toolId) : undefined;
-  const intent = deriveIntent(topTool, topScore);
+  const intent = request.intent?.trim() || deriveIntent(topTool, topScore);
   const fallback = decideFallback({
-    utterance: request.utterance,
+    utterance: query,
     candidateCount: tools.length,
     topScore,
   });
