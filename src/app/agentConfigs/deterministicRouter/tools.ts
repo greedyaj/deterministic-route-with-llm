@@ -57,11 +57,21 @@ export const routerTool = tool({
     const updateSessionTools = context?.updateSessionTools as
       | ((tools: Tool[]) => void)
       | undefined;
+    const setRouterStatus = context?.setRouterStatus as
+      | ((status: { intent: string; toolCount: number; fallback: string }) => void)
+      | undefined;
 
     if (typeof updateSessionTools === "function") {
       const sessionTools = buildSessionToolsFromRouter(response.tools);
       updateSessionTools(sessionTools);
       context.allowedToolNames = response.tools.map((toolItem) => toolItem.name);
+    }
+    if (typeof setRouterStatus === "function") {
+      setRouterStatus({
+        intent: response.intent,
+        toolCount: response.tools.length,
+        fallback: response.fallback,
+      });
     }
 
     return response;

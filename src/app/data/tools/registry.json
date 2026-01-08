@@ -2,8 +2,8 @@
   "version": "0.1.0",
   "tools": [
     {
-      "id": "calendar.create_event",
-      "name": "calendar.create_event",
+      "id": "calendar_create_event",
+      "name": "calendar_create_event",
       "description": "Create event in calendar.",
       "tags": [
         "calendar",
@@ -39,8 +39,8 @@
       }
     },
     {
-      "id": "calendar.get_event",
-      "name": "calendar.get_event",
+      "id": "calendar_get_event",
+      "name": "calendar_get_event",
       "description": "Get event in calendar.",
       "tags": [
         "calendar",
@@ -76,8 +76,8 @@
       }
     },
     {
-      "id": "calendar.update_event",
-      "name": "calendar.update_event",
+      "id": "calendar_update_event",
+      "name": "calendar_update_event",
       "description": "Update event in calendar.",
       "tags": [
         "calendar",
@@ -118,8 +118,8 @@
       }
     },
     {
-      "id": "calendar.delete_event",
-      "name": "calendar.delete_event",
+      "id": "calendar_delete_event",
+      "name": "calendar_delete_event",
       "description": "Delete event in calendar.",
       "tags": [
         "calendar",
@@ -155,8 +155,8 @@
       }
     },
     {
-      "id": "calendar.list_event",
-      "name": "calendar.list_event",
+      "id": "calendar_list_event",
+      "name": "calendar_list_event",
       "description": "List event in calendar.",
       "tags": [
         "calendar",
@@ -189,8 +189,8 @@
       }
     },
     {
-      "id": "calendar.create_meeting",
-      "name": "calendar.create_meeting",
+      "id": "calendar_create_meeting",
+      "name": "calendar_create_meeting",
       "description": "Create meeting in calendar.",
       "tags": [
         "calendar",
@@ -226,8 +226,8 @@
       }
     },
     {
-      "id": "calendar.get_meeting",
-      "name": "calendar.get_meeting",
+      "id": "calendar_get_meeting",
+      "name": "calendar_get_meeting",
       "description": "Get meeting in calendar.",
       "tags": [
         "calendar",
@@ -263,8 +263,8 @@
       }
     },
     {
-      "id": "calendar.update_meeting",
-      "name": "calendar.update_meeting",
+      "id": "calendar_update_meeting",
+      "name": "calendar_update_meeting",
       "description": "Update meeting in calendar.",
       "tags": [
         "calendar",
@@ -305,8 +305,8 @@
       }
     },
     {
-      "id": "calendar.delete_meeting",
-      "name": "calendar.delete_meeting",
+      "id": "calendar_delete_meeting",
+      "name": "calendar_delete_meeting",
       "description": "Delete meeting in calendar.",
       "tags": [
         "calendar",
@@ -342,8 +342,8 @@
       }
     },
     {
-      "id": "calendar.list_meeting",
-      "name": "calendar.list_meeting",
+      "id": "calendar_list_meeting",
+      "name": "calendar_list_meeting",
       "description": "List meeting in calendar.",
       "tags": [
         "calendar",
@@ -376,8 +376,8 @@
       }
     },
     {
-      "id": "calendar.create_reminder",
-      "name": "calendar.create_reminder",
+      "id": "calendar_create_reminder",
+      "name": "calendar_create_reminder",
       "description": "Create reminder in calendar.",
       "tags": [
         "calendar",
@@ -413,8 +413,8 @@
       }
     },
     {
-      "id": "calendar.get_reminder",
-      "name": "calendar.get_reminder",
+      "id": "calendar_get_reminder",
+      "name": "calendar_get_reminder",
       "description": "Get reminder in calendar.",
       "tags": [
         "calendar",
@@ -450,8 +450,8 @@
       }
     },
     {
-      "id": "calendar.update_reminder",
-      "name": "calendar.update_reminder",
+      "id": "calendar_update_reminder",
+      "name": "calendar_update_reminder",
       "description": "Update reminder in calendar.",
       "tags": [
         "calendar",
@@ -492,8 +492,8 @@
       }
     },
     {
-      "id": "calendar.delete_reminder",
-      "name": "calendar.delete_reminder",
+      "id": "calendar_delete_reminder",
+      "name": "calendar_delete_reminder",
       "description": "Delete reminder in calendar.",
       "tags": [
         "calendar",
@@ -529,8 +529,8 @@
       }
     },
     {
-      "id": "calendar.list_reminder",
-      "name": "calendar.list_reminder",
+      "id": "calendar_list_reminder",
+      "name": "calendar_list_reminder",
       "description": "List reminder in calendar.",
       "tags": [
         "calendar",
@@ -563,8 +563,8 @@
       }
     },
     {
-      "id": "calendar.create_availability",
-      "name": "calendar.create_availability",
+      "id": "calendar_create_availability",
+      "name": "calendar_create_availability",
       "description": "Create availability in calendar.",
       "tags": [
         "calendar",
@@ -600,8 +600,8 @@
       }
     },
     {
-      "id": "calendar.get_availability",
-      "name": "calendar.get_availability",
+      "id": "calendar_get_availability",
+      "name": "calendar_get_availability",
       "description": "Get availability in calendar.",
       "tags": [
         "calendar",
@@ -637,8 +637,8 @@
       }
     },
     {
-      "id": "calendar.update_availability",
-      "name": "calendar.update_availability",
+      "id": "calendar_update_availability",
+      "name": "calendar_update_availability",
       "description": "Update availability in calendar.",
       "tags": [
         "calendar",
@@ -679,8 +679,8 @@
       }
     },
     {
-      "id": "calendar.delete_availability",
-      "name": "calendar.delete_availability",
+      "id": "calendar_delete_availability",
+      "name": "calendar_delete_availability",
       "description": "Delete availability in calendar.",
       "tags": [
         "calendar",
@@ -716,8 +716,8 @@
       }
     },
     {
-      "id": "calendar.list_availability",
-      "name": "calendar.list_availability",
+      "id": "calendar_list_availability",
+      "name": "calendar_list_availability",
       "description": "List availability in calendar.",
       "tags": [
         "calendar",
@@ -750,8 +750,8 @@
       }
     },
     {
-      "id": "calendar.create_invite",
-      "name": "calendar.create_invite",
+      "id": "calendar_create_invite",
+      "name": "calendar_create_invite",
       "description": "Create invite in calendar.",
       "tags": [
         "calendar",
@@ -787,8 +787,8 @@
       }
     },
     {
-      "id": "calendar.get_invite",
-      "name": "calendar.get_invite",
+      "id": "calendar_get_invite",
+      "name": "calendar_get_invite",
       "description": "Get invite in calendar.",
       "tags": [
         "calendar",
@@ -824,8 +824,8 @@
       }
     },
     {
-      "id": "calendar.update_invite",
-      "name": "calendar.update_invite",
+      "id": "calendar_update_invite",
+      "name": "calendar_update_invite",
       "description": "Update invite in calendar.",
       "tags": [
         "calendar",
@@ -866,8 +866,8 @@
       }
     },
     {
-      "id": "calendar.delete_invite",
-      "name": "calendar.delete_invite",
+      "id": "calendar_delete_invite",
+      "name": "calendar_delete_invite",
       "description": "Delete invite in calendar.",
       "tags": [
         "calendar",
@@ -903,8 +903,8 @@
       }
     },
     {
-      "id": "calendar.list_invite",
-      "name": "calendar.list_invite",
+      "id": "calendar_list_invite",
+      "name": "calendar_list_invite",
       "description": "List invite in calendar.",
       "tags": [
         "calendar",
@@ -937,8 +937,8 @@
       }
     },
     {
-      "id": "calendar.create_calendar_entry",
-      "name": "calendar.create_calendar_entry",
+      "id": "calendar_create_calendar_entry",
+      "name": "calendar_create_calendar_entry",
       "description": "Create calendar entry in calendar.",
       "tags": [
         "calendar",
@@ -974,8 +974,8 @@
       }
     },
     {
-      "id": "calendar.get_calendar_entry",
-      "name": "calendar.get_calendar_entry",
+      "id": "calendar_get_calendar_entry",
+      "name": "calendar_get_calendar_entry",
       "description": "Get calendar entry in calendar.",
       "tags": [
         "calendar",
@@ -1011,8 +1011,8 @@
       }
     },
     {
-      "id": "calendar.update_calendar_entry",
-      "name": "calendar.update_calendar_entry",
+      "id": "calendar_update_calendar_entry",
+      "name": "calendar_update_calendar_entry",
       "description": "Update calendar entry in calendar.",
       "tags": [
         "calendar",
@@ -1053,8 +1053,8 @@
       }
     },
     {
-      "id": "calendar.delete_calendar_entry",
-      "name": "calendar.delete_calendar_entry",
+      "id": "calendar_delete_calendar_entry",
+      "name": "calendar_delete_calendar_entry",
       "description": "Delete calendar entry in calendar.",
       "tags": [
         "calendar",
@@ -1090,8 +1090,8 @@
       }
     },
     {
-      "id": "calendar.list_calendar_entry",
-      "name": "calendar.list_calendar_entry",
+      "id": "calendar_list_calendar_entry",
+      "name": "calendar_list_calendar_entry",
       "description": "List calendar entry in calendar.",
       "tags": [
         "calendar",
@@ -1124,8 +1124,8 @@
       }
     },
     {
-      "id": "calendar.create_timezone",
-      "name": "calendar.create_timezone",
+      "id": "calendar_create_timezone",
+      "name": "calendar_create_timezone",
       "description": "Create timezone in calendar.",
       "tags": [
         "calendar",
@@ -1161,8 +1161,8 @@
       }
     },
     {
-      "id": "calendar.get_timezone",
-      "name": "calendar.get_timezone",
+      "id": "calendar_get_timezone",
+      "name": "calendar_get_timezone",
       "description": "Get timezone in calendar.",
       "tags": [
         "calendar",
@@ -1198,8 +1198,8 @@
       }
     },
     {
-      "id": "calendar.update_timezone",
-      "name": "calendar.update_timezone",
+      "id": "calendar_update_timezone",
+      "name": "calendar_update_timezone",
       "description": "Update timezone in calendar.",
       "tags": [
         "calendar",
@@ -1240,8 +1240,8 @@
       }
     },
     {
-      "id": "calendar.delete_timezone",
-      "name": "calendar.delete_timezone",
+      "id": "calendar_delete_timezone",
+      "name": "calendar_delete_timezone",
       "description": "Delete timezone in calendar.",
       "tags": [
         "calendar",
@@ -1277,8 +1277,8 @@
       }
     },
     {
-      "id": "calendar.list_timezone",
-      "name": "calendar.list_timezone",
+      "id": "calendar_list_timezone",
+      "name": "calendar_list_timezone",
       "description": "List timezone in calendar.",
       "tags": [
         "calendar",
@@ -1311,8 +1311,8 @@
       }
     },
     {
-      "id": "calendar.create_holiday",
-      "name": "calendar.create_holiday",
+      "id": "calendar_create_holiday",
+      "name": "calendar_create_holiday",
       "description": "Create holiday in calendar.",
       "tags": [
         "calendar",
@@ -1348,8 +1348,8 @@
       }
     },
     {
-      "id": "calendar.get_holiday",
-      "name": "calendar.get_holiday",
+      "id": "calendar_get_holiday",
+      "name": "calendar_get_holiday",
       "description": "Get holiday in calendar.",
       "tags": [
         "calendar",
@@ -1385,8 +1385,8 @@
       }
     },
     {
-      "id": "calendar.update_holiday",
-      "name": "calendar.update_holiday",
+      "id": "calendar_update_holiday",
+      "name": "calendar_update_holiday",
       "description": "Update holiday in calendar.",
       "tags": [
         "calendar",
@@ -1427,8 +1427,8 @@
       }
     },
     {
-      "id": "calendar.delete_holiday",
-      "name": "calendar.delete_holiday",
+      "id": "calendar_delete_holiday",
+      "name": "calendar_delete_holiday",
       "description": "Delete holiday in calendar.",
       "tags": [
         "calendar",
@@ -1464,8 +1464,8 @@
       }
     },
     {
-      "id": "calendar.list_holiday",
-      "name": "calendar.list_holiday",
+      "id": "calendar_list_holiday",
+      "name": "calendar_list_holiday",
       "description": "List holiday in calendar.",
       "tags": [
         "calendar",
@@ -1498,8 +1498,8 @@
       }
     },
     {
-      "id": "calendar.create_schedule_block",
-      "name": "calendar.create_schedule_block",
+      "id": "calendar_create_schedule_block",
+      "name": "calendar_create_schedule_block",
       "description": "Create schedule block in calendar.",
       "tags": [
         "calendar",
@@ -1535,8 +1535,8 @@
       }
     },
     {
-      "id": "calendar.get_schedule_block",
-      "name": "calendar.get_schedule_block",
+      "id": "calendar_get_schedule_block",
+      "name": "calendar_get_schedule_block",
       "description": "Get schedule block in calendar.",
       "tags": [
         "calendar",
@@ -1572,8 +1572,8 @@
       }
     },
     {
-      "id": "calendar.update_schedule_block",
-      "name": "calendar.update_schedule_block",
+      "id": "calendar_update_schedule_block",
+      "name": "calendar_update_schedule_block",
       "description": "Update schedule block in calendar.",
       "tags": [
         "calendar",
@@ -1614,8 +1614,8 @@
       }
     },
     {
-      "id": "calendar.delete_schedule_block",
-      "name": "calendar.delete_schedule_block",
+      "id": "calendar_delete_schedule_block",
+      "name": "calendar_delete_schedule_block",
       "description": "Delete schedule block in calendar.",
       "tags": [
         "calendar",
@@ -1651,8 +1651,8 @@
       }
     },
     {
-      "id": "calendar.list_schedule_block",
-      "name": "calendar.list_schedule_block",
+      "id": "calendar_list_schedule_block",
+      "name": "calendar_list_schedule_block",
       "description": "List schedule block in calendar.",
       "tags": [
         "calendar",
@@ -1685,8 +1685,8 @@
       }
     },
     {
-      "id": "calendar.create_agenda",
-      "name": "calendar.create_agenda",
+      "id": "calendar_create_agenda",
+      "name": "calendar_create_agenda",
       "description": "Create agenda in calendar.",
       "tags": [
         "calendar",
@@ -1722,8 +1722,8 @@
       }
     },
     {
-      "id": "calendar.get_agenda",
-      "name": "calendar.get_agenda",
+      "id": "calendar_get_agenda",
+      "name": "calendar_get_agenda",
       "description": "Get agenda in calendar.",
       "tags": [
         "calendar",
@@ -1759,8 +1759,8 @@
       }
     },
     {
-      "id": "calendar.update_agenda",
-      "name": "calendar.update_agenda",
+      "id": "calendar_update_agenda",
+      "name": "calendar_update_agenda",
       "description": "Update agenda in calendar.",
       "tags": [
         "calendar",
@@ -1801,8 +1801,8 @@
       }
     },
     {
-      "id": "calendar.delete_agenda",
-      "name": "calendar.delete_agenda",
+      "id": "calendar_delete_agenda",
+      "name": "calendar_delete_agenda",
       "description": "Delete agenda in calendar.",
       "tags": [
         "calendar",
@@ -1838,8 +1838,8 @@
       }
     },
     {
-      "id": "calendar.list_agenda",
-      "name": "calendar.list_agenda",
+      "id": "calendar_list_agenda",
+      "name": "calendar_list_agenda",
       "description": "List agenda in calendar.",
       "tags": [
         "calendar",
@@ -1872,8 +1872,8 @@
       }
     },
     {
-      "id": "email.create_message",
-      "name": "email.create_message",
+      "id": "email_create_message",
+      "name": "email_create_message",
       "description": "Create message in email.",
       "tags": [
         "email",
@@ -1909,8 +1909,8 @@
       }
     },
     {
-      "id": "email.get_message",
-      "name": "email.get_message",
+      "id": "email_get_message",
+      "name": "email_get_message",
       "description": "Get message in email.",
       "tags": [
         "email",
@@ -1946,8 +1946,8 @@
       }
     },
     {
-      "id": "email.update_message",
-      "name": "email.update_message",
+      "id": "email_update_message",
+      "name": "email_update_message",
       "description": "Update message in email.",
       "tags": [
         "email",
@@ -1988,8 +1988,8 @@
       }
     },
     {
-      "id": "email.delete_message",
-      "name": "email.delete_message",
+      "id": "email_delete_message",
+      "name": "email_delete_message",
       "description": "Delete message in email.",
       "tags": [
         "email",
@@ -2025,8 +2025,8 @@
       }
     },
     {
-      "id": "email.list_message",
-      "name": "email.list_message",
+      "id": "email_list_message",
+      "name": "email_list_message",
       "description": "List message in email.",
       "tags": [
         "email",
@@ -2059,8 +2059,8 @@
       }
     },
     {
-      "id": "email.create_draft",
-      "name": "email.create_draft",
+      "id": "email_create_draft",
+      "name": "email_create_draft",
       "description": "Create draft in email.",
       "tags": [
         "email",
@@ -2096,8 +2096,8 @@
       }
     },
     {
-      "id": "email.get_draft",
-      "name": "email.get_draft",
+      "id": "email_get_draft",
+      "name": "email_get_draft",
       "description": "Get draft in email.",
       "tags": [
         "email",
@@ -2133,8 +2133,8 @@
       }
     },
     {
-      "id": "email.update_draft",
-      "name": "email.update_draft",
+      "id": "email_update_draft",
+      "name": "email_update_draft",
       "description": "Update draft in email.",
       "tags": [
         "email",
@@ -2175,8 +2175,8 @@
       }
     },
     {
-      "id": "email.delete_draft",
-      "name": "email.delete_draft",
+      "id": "email_delete_draft",
+      "name": "email_delete_draft",
       "description": "Delete draft in email.",
       "tags": [
         "email",
@@ -2212,8 +2212,8 @@
       }
     },
     {
-      "id": "email.list_draft",
-      "name": "email.list_draft",
+      "id": "email_list_draft",
+      "name": "email_list_draft",
       "description": "List draft in email.",
       "tags": [
         "email",
@@ -2246,8 +2246,8 @@
       }
     },
     {
-      "id": "email.create_inbox",
-      "name": "email.create_inbox",
+      "id": "email_create_inbox",
+      "name": "email_create_inbox",
       "description": "Create inbox in email.",
       "tags": [
         "email",
@@ -2283,8 +2283,8 @@
       }
     },
     {
-      "id": "email.get_inbox",
-      "name": "email.get_inbox",
+      "id": "email_get_inbox",
+      "name": "email_get_inbox",
       "description": "Get inbox in email.",
       "tags": [
         "email",
@@ -2320,8 +2320,8 @@
       }
     },
     {
-      "id": "email.update_inbox",
-      "name": "email.update_inbox",
+      "id": "email_update_inbox",
+      "name": "email_update_inbox",
       "description": "Update inbox in email.",
       "tags": [
         "email",
@@ -2362,8 +2362,8 @@
       }
     },
     {
-      "id": "email.delete_inbox",
-      "name": "email.delete_inbox",
+      "id": "email_delete_inbox",
+      "name": "email_delete_inbox",
       "description": "Delete inbox in email.",
       "tags": [
         "email",
@@ -2399,8 +2399,8 @@
       }
     },
     {
-      "id": "email.list_inbox",
-      "name": "email.list_inbox",
+      "id": "email_list_inbox",
+      "name": "email_list_inbox",
       "description": "List inbox in email.",
       "tags": [
         "email",
@@ -2433,8 +2433,8 @@
       }
     },
     {
-      "id": "email.create_thread",
-      "name": "email.create_thread",
+      "id": "email_create_thread",
+      "name": "email_create_thread",
       "description": "Create thread in email.",
       "tags": [
         "email",
@@ -2470,8 +2470,8 @@
       }
     },
     {
-      "id": "email.get_thread",
-      "name": "email.get_thread",
+      "id": "email_get_thread",
+      "name": "email_get_thread",
       "description": "Get thread in email.",
       "tags": [
         "email",
@@ -2507,8 +2507,8 @@
       }
     },
     {
-      "id": "email.update_thread",
-      "name": "email.update_thread",
+      "id": "email_update_thread",
+      "name": "email_update_thread",
       "description": "Update thread in email.",
       "tags": [
         "email",
@@ -2549,8 +2549,8 @@
       }
     },
     {
-      "id": "email.delete_thread",
-      "name": "email.delete_thread",
+      "id": "email_delete_thread",
+      "name": "email_delete_thread",
       "description": "Delete thread in email.",
       "tags": [
         "email",
@@ -2586,8 +2586,8 @@
       }
     },
     {
-      "id": "email.list_thread",
-      "name": "email.list_thread",
+      "id": "email_list_thread",
+      "name": "email_list_thread",
       "description": "List thread in email.",
       "tags": [
         "email",
@@ -2620,8 +2620,8 @@
       }
     },
     {
-      "id": "email.create_attachment",
-      "name": "email.create_attachment",
+      "id": "email_create_attachment",
+      "name": "email_create_attachment",
       "description": "Create attachment in email.",
       "tags": [
         "email",
@@ -2657,8 +2657,8 @@
       }
     },
     {
-      "id": "email.get_attachment",
-      "name": "email.get_attachment",
+      "id": "email_get_attachment",
+      "name": "email_get_attachment",
       "description": "Get attachment in email.",
       "tags": [
         "email",
@@ -2694,8 +2694,8 @@
       }
     },
     {
-      "id": "email.update_attachment",
-      "name": "email.update_attachment",
+      "id": "email_update_attachment",
+      "name": "email_update_attachment",
       "description": "Update attachment in email.",
       "tags": [
         "email",
@@ -2736,8 +2736,8 @@
       }
     },
     {
-      "id": "email.delete_attachment",
-      "name": "email.delete_attachment",
+      "id": "email_delete_attachment",
+      "name": "email_delete_attachment",
       "description": "Delete attachment in email.",
       "tags": [
         "email",
@@ -2773,8 +2773,8 @@
       }
     },
     {
-      "id": "email.list_attachment",
-      "name": "email.list_attachment",
+      "id": "email_list_attachment",
+      "name": "email_list_attachment",
       "description": "List attachment in email.",
       "tags": [
         "email",
@@ -2807,8 +2807,8 @@
       }
     },
     {
-      "id": "email.create_recipient",
-      "name": "email.create_recipient",
+      "id": "email_create_recipient",
+      "name": "email_create_recipient",
       "description": "Create recipient in email.",
       "tags": [
         "email",
@@ -2844,8 +2844,8 @@
       }
     },
     {
-      "id": "email.get_recipient",
-      "name": "email.get_recipient",
+      "id": "email_get_recipient",
+      "name": "email_get_recipient",
       "description": "Get recipient in email.",
       "tags": [
         "email",
@@ -2881,8 +2881,8 @@
       }
     },
     {
-      "id": "email.update_recipient",
-      "name": "email.update_recipient",
+      "id": "email_update_recipient",
+      "name": "email_update_recipient",
       "description": "Update recipient in email.",
       "tags": [
         "email",
@@ -2923,8 +2923,8 @@
       }
     },
     {
-      "id": "email.delete_recipient",
-      "name": "email.delete_recipient",
+      "id": "email_delete_recipient",
+      "name": "email_delete_recipient",
       "description": "Delete recipient in email.",
       "tags": [
         "email",
@@ -2960,8 +2960,8 @@
       }
     },
     {
-      "id": "email.list_recipient",
-      "name": "email.list_recipient",
+      "id": "email_list_recipient",
+      "name": "email_list_recipient",
       "description": "List recipient in email.",
       "tags": [
         "email",
@@ -2994,8 +2994,8 @@
       }
     },
     {
-      "id": "email.create_signature",
-      "name": "email.create_signature",
+      "id": "email_create_signature",
+      "name": "email_create_signature",
       "description": "Create signature in email.",
       "tags": [
         "email",
@@ -3031,8 +3031,8 @@
       }
     },
     {
-      "id": "email.get_signature",
-      "name": "email.get_signature",
+      "id": "email_get_signature",
+      "name": "email_get_signature",
       "description": "Get signature in email.",
       "tags": [
         "email",
@@ -3068,8 +3068,8 @@
       }
     },
     {
-      "id": "email.update_signature",
-      "name": "email.update_signature",
+      "id": "email_update_signature",
+      "name": "email_update_signature",
       "description": "Update signature in email.",
       "tags": [
         "email",
@@ -3110,8 +3110,8 @@
       }
     },
     {
-      "id": "email.delete_signature",
-      "name": "email.delete_signature",
+      "id": "email_delete_signature",
+      "name": "email_delete_signature",
       "description": "Delete signature in email.",
       "tags": [
         "email",
@@ -3147,8 +3147,8 @@
       }
     },
     {
-      "id": "email.list_signature",
-      "name": "email.list_signature",
+      "id": "email_list_signature",
+      "name": "email_list_signature",
       "description": "List signature in email.",
       "tags": [
         "email",
@@ -3181,8 +3181,8 @@
       }
     },
     {
-      "id": "email.create_folder",
-      "name": "email.create_folder",
+      "id": "email_create_folder",
+      "name": "email_create_folder",
       "description": "Create folder in email.",
       "tags": [
         "email",
@@ -3218,8 +3218,8 @@
       }
     },
     {
-      "id": "email.get_folder",
-      "name": "email.get_folder",
+      "id": "email_get_folder",
+      "name": "email_get_folder",
       "description": "Get folder in email.",
       "tags": [
         "email",
@@ -3255,8 +3255,8 @@
       }
     },
     {
-      "id": "email.update_folder",
-      "name": "email.update_folder",
+      "id": "email_update_folder",
+      "name": "email_update_folder",
       "description": "Update folder in email.",
       "tags": [
         "email",
@@ -3297,8 +3297,8 @@
       }
     },
     {
-      "id": "email.delete_folder",
-      "name": "email.delete_folder",
+      "id": "email_delete_folder",
+      "name": "email_delete_folder",
       "description": "Delete folder in email.",
       "tags": [
         "email",
@@ -3334,8 +3334,8 @@
       }
     },
     {
-      "id": "email.list_folder",
-      "name": "email.list_folder",
+      "id": "email_list_folder",
+      "name": "email_list_folder",
       "description": "List folder in email.",
       "tags": [
         "email",
@@ -3368,8 +3368,8 @@
       }
     },
     {
-      "id": "email.create_filter",
-      "name": "email.create_filter",
+      "id": "email_create_filter",
+      "name": "email_create_filter",
       "description": "Create filter in email.",
       "tags": [
         "email",
@@ -3405,8 +3405,8 @@
       }
     },
     {
-      "id": "email.get_filter",
-      "name": "email.get_filter",
+      "id": "email_get_filter",
+      "name": "email_get_filter",
       "description": "Get filter in email.",
       "tags": [
         "email",
@@ -3442,8 +3442,8 @@
       }
     },
     {
-      "id": "email.update_filter",
-      "name": "email.update_filter",
+      "id": "email_update_filter",
+      "name": "email_update_filter",
       "description": "Update filter in email.",
       "tags": [
         "email",
@@ -3484,8 +3484,8 @@
       }
     },
     {
-      "id": "email.delete_filter",
-      "name": "email.delete_filter",
+      "id": "email_delete_filter",
+      "name": "email_delete_filter",
       "description": "Delete filter in email.",
       "tags": [
         "email",
@@ -3521,8 +3521,8 @@
       }
     },
     {
-      "id": "email.list_filter",
-      "name": "email.list_filter",
+      "id": "email_list_filter",
+      "name": "email_list_filter",
       "description": "List filter in email.",
       "tags": [
         "email",
@@ -3555,8 +3555,8 @@
       }
     },
     {
-      "id": "email.create_alias",
-      "name": "email.create_alias",
+      "id": "email_create_alias",
+      "name": "email_create_alias",
       "description": "Create alias in email.",
       "tags": [
         "email",
@@ -3592,8 +3592,8 @@
       }
     },
     {
-      "id": "email.get_alias",
-      "name": "email.get_alias",
+      "id": "email_get_alias",
+      "name": "email_get_alias",
       "description": "Get alias in email.",
       "tags": [
         "email",
@@ -3629,8 +3629,8 @@
       }
     },
     {
-      "id": "email.update_alias",
-      "name": "email.update_alias",
+      "id": "email_update_alias",
+      "name": "email_update_alias",
       "description": "Update alias in email.",
       "tags": [
         "email",
@@ -3671,8 +3671,8 @@
       }
     },
     {
-      "id": "email.delete_alias",
-      "name": "email.delete_alias",
+      "id": "email_delete_alias",
+      "name": "email_delete_alias",
       "description": "Delete alias in email.",
       "tags": [
         "email",
@@ -3708,8 +3708,8 @@
       }
     },
     {
-      "id": "email.list_alias",
-      "name": "email.list_alias",
+      "id": "email_list_alias",
+      "name": "email_list_alias",
       "description": "List alias in email.",
       "tags": [
         "email",
@@ -3742,8 +3742,8 @@
       }
     },
     {
-      "id": "search.create_query",
-      "name": "search.create_query",
+      "id": "search_create_query",
+      "name": "search_create_query",
       "description": "Create query in search.",
       "tags": [
         "search",
@@ -3779,8 +3779,8 @@
       }
     },
     {
-      "id": "search.get_query",
-      "name": "search.get_query",
+      "id": "search_get_query",
+      "name": "search_get_query",
       "description": "Get query in search.",
       "tags": [
         "search",
@@ -3816,8 +3816,8 @@
       }
     },
     {
-      "id": "search.update_query",
-      "name": "search.update_query",
+      "id": "search_update_query",
+      "name": "search_update_query",
       "description": "Update query in search.",
       "tags": [
         "search",
@@ -3858,8 +3858,8 @@
       }
     },
     {
-      "id": "search.delete_query",
-      "name": "search.delete_query",
+      "id": "search_delete_query",
+      "name": "search_delete_query",
       "description": "Delete query in search.",
       "tags": [
         "search",
@@ -3895,8 +3895,8 @@
       }
     },
     {
-      "id": "search.list_query",
-      "name": "search.list_query",
+      "id": "search_list_query",
+      "name": "search_list_query",
       "description": "List query in search.",
       "tags": [
         "search",
@@ -3929,8 +3929,8 @@
       }
     },
     {
-      "id": "search.create_document",
-      "name": "search.create_document",
+      "id": "search_create_document",
+      "name": "search_create_document",
       "description": "Create document in search.",
       "tags": [
         "search",
@@ -3966,8 +3966,8 @@
       }
     },
     {
-      "id": "search.get_document",
-      "name": "search.get_document",
+      "id": "search_get_document",
+      "name": "search_get_document",
       "description": "Get document in search.",
       "tags": [
         "search",
@@ -4003,8 +4003,8 @@
       }
     },
     {
-      "id": "search.update_document",
-      "name": "search.update_document",
+      "id": "search_update_document",
+      "name": "search_update_document",
       "description": "Update document in search.",
       "tags": [
         "search",
@@ -4045,8 +4045,8 @@
       }
     },
     {
-      "id": "search.delete_document",
-      "name": "search.delete_document",
+      "id": "search_delete_document",
+      "name": "search_delete_document",
       "description": "Delete document in search.",
       "tags": [
         "search",
@@ -4082,8 +4082,8 @@
       }
     },
     {
-      "id": "search.list_document",
-      "name": "search.list_document",
+      "id": "search_list_document",
+      "name": "search_list_document",
       "description": "List document in search.",
       "tags": [
         "search",
@@ -4116,8 +4116,8 @@
       }
     },
     {
-      "id": "search.create_record",
-      "name": "search.create_record",
+      "id": "search_create_record",
+      "name": "search_create_record",
       "description": "Create record in search.",
       "tags": [
         "search",
@@ -4153,8 +4153,8 @@
       }
     },
     {
-      "id": "search.get_record",
-      "name": "search.get_record",
+      "id": "search_get_record",
+      "name": "search_get_record",
       "description": "Get record in search.",
       "tags": [
         "search",
@@ -4190,8 +4190,8 @@
       }
     },
     {
-      "id": "search.update_record",
-      "name": "search.update_record",
+      "id": "search_update_record",
+      "name": "search_update_record",
       "description": "Update record in search.",
       "tags": [
         "search",
@@ -4232,8 +4232,8 @@
       }
     },
     {
-      "id": "search.delete_record",
-      "name": "search.delete_record",
+      "id": "search_delete_record",
+      "name": "search_delete_record",
       "description": "Delete record in search.",
       "tags": [
         "search",
@@ -4269,8 +4269,8 @@
       }
     },
     {
-      "id": "search.list_record",
-      "name": "search.list_record",
+      "id": "search_list_record",
+      "name": "search_list_record",
       "description": "List record in search.",
       "tags": [
         "search",
@@ -4303,8 +4303,8 @@
       }
     },
     {
-      "id": "search.create_site",
-      "name": "search.create_site",
+      "id": "search_create_site",
+      "name": "search_create_site",
       "description": "Create site in search.",
       "tags": [
         "search",
@@ -4340,8 +4340,8 @@
       }
     },
     {
-      "id": "search.get_site",
-      "name": "search.get_site",
+      "id": "search_get_site",
+      "name": "search_get_site",
       "description": "Get site in search.",
       "tags": [
         "search",
@@ -4377,8 +4377,8 @@
       }
     },
     {
-      "id": "search.update_site",
-      "name": "search.update_site",
+      "id": "search_update_site",
+      "name": "search_update_site",
       "description": "Update site in search.",
       "tags": [
         "search",
@@ -4419,8 +4419,8 @@
       }
     },
     {
-      "id": "search.delete_site",
-      "name": "search.delete_site",
+      "id": "search_delete_site",
+      "name": "search_delete_site",
       "description": "Delete site in search.",
       "tags": [
         "search",
@@ -4456,8 +4456,8 @@
       }
     },
     {
-      "id": "search.list_site",
-      "name": "search.list_site",
+      "id": "search_list_site",
+      "name": "search_list_site",
       "description": "List site in search.",
       "tags": [
         "search",
@@ -4490,8 +4490,8 @@
       }
     },
     {
-      "id": "search.create_keyword",
-      "name": "search.create_keyword",
+      "id": "search_create_keyword",
+      "name": "search_create_keyword",
       "description": "Create keyword in search.",
       "tags": [
         "search",
@@ -4527,8 +4527,8 @@
       }
     },
     {
-      "id": "search.get_keyword",
-      "name": "search.get_keyword",
+      "id": "search_get_keyword",
+      "name": "search_get_keyword",
       "description": "Get keyword in search.",
       "tags": [
         "search",
@@ -4564,8 +4564,8 @@
       }
     },
     {
-      "id": "search.update_keyword",
-      "name": "search.update_keyword",
+      "id": "search_update_keyword",
+      "name": "search_update_keyword",
       "description": "Update keyword in search.",
       "tags": [
         "search",
@@ -4606,8 +4606,8 @@
       }
     },
     {
-      "id": "search.delete_keyword",
-      "name": "search.delete_keyword",
+      "id": "search_delete_keyword",
+      "name": "search_delete_keyword",
       "description": "Delete keyword in search.",
       "tags": [
         "search",
@@ -4643,8 +4643,8 @@
       }
     },
     {
-      "id": "search.list_keyword",
-      "name": "search.list_keyword",
+      "id": "search_list_keyword",
+      "name": "search_list_keyword",
       "description": "List keyword in search.",
       "tags": [
         "search",
@@ -4677,8 +4677,8 @@
       }
     },
     {
-      "id": "search.create_news",
-      "name": "search.create_news",
+      "id": "search_create_news",
+      "name": "search_create_news",
       "description": "Create news in search.",
       "tags": [
         "search",
@@ -4714,8 +4714,8 @@
       }
     },
     {
-      "id": "search.get_news",
-      "name": "search.get_news",
+      "id": "search_get_news",
+      "name": "search_get_news",
       "description": "Get news in search.",
       "tags": [
         "search",
@@ -4751,8 +4751,8 @@
       }
     },
     {
-      "id": "search.update_news",
-      "name": "search.update_news",
+      "id": "search_update_news",
+      "name": "search_update_news",
       "description": "Update news in search.",
       "tags": [
         "search",
@@ -4793,8 +4793,8 @@
       }
     },
     {
-      "id": "search.delete_news",
-      "name": "search.delete_news",
+      "id": "search_delete_news",
+      "name": "search_delete_news",
       "description": "Delete news in search.",
       "tags": [
         "search",
@@ -4830,8 +4830,8 @@
       }
     },
     {
-      "id": "search.list_news",
-      "name": "search.list_news",
+      "id": "search_list_news",
+      "name": "search_list_news",
       "description": "List news in search.",
       "tags": [
         "search",
@@ -4864,8 +4864,8 @@
       }
     },
     {
-      "id": "search.create_product",
-      "name": "search.create_product",
+      "id": "search_create_product",
+      "name": "search_create_product",
       "description": "Create product in search.",
       "tags": [
         "search",
@@ -4901,8 +4901,8 @@
       }
     },
     {
-      "id": "search.get_product",
-      "name": "search.get_product",
+      "id": "search_get_product",
+      "name": "search_get_product",
       "description": "Get product in search.",
       "tags": [
         "search",
@@ -4938,8 +4938,8 @@
       }
     },
     {
-      "id": "search.update_product",
-      "name": "search.update_product",
+      "id": "search_update_product",
+      "name": "search_update_product",
       "description": "Update product in search.",
       "tags": [
         "search",
@@ -4980,8 +4980,8 @@
       }
     },
     {
-      "id": "search.delete_product",
-      "name": "search.delete_product",
+      "id": "search_delete_product",
+      "name": "search_delete_product",
       "description": "Delete product in search.",
       "tags": [
         "search",
@@ -5017,8 +5017,8 @@
       }
     },
     {
-      "id": "search.list_product",
-      "name": "search.list_product",
+      "id": "search_list_product",
+      "name": "search_list_product",
       "description": "List product in search.",
       "tags": [
         "search",
@@ -5051,8 +5051,8 @@
       }
     },
     {
-      "id": "search.create_image",
-      "name": "search.create_image",
+      "id": "search_create_image",
+      "name": "search_create_image",
       "description": "Create image in search.",
       "tags": [
         "search",
@@ -5088,8 +5088,8 @@
       }
     },
     {
-      "id": "search.get_image",
-      "name": "search.get_image",
+      "id": "search_get_image",
+      "name": "search_get_image",
       "description": "Get image in search.",
       "tags": [
         "search",
@@ -5125,8 +5125,8 @@
       }
     },
     {
-      "id": "search.update_image",
-      "name": "search.update_image",
+      "id": "search_update_image",
+      "name": "search_update_image",
       "description": "Update image in search.",
       "tags": [
         "search",
@@ -5167,8 +5167,8 @@
       }
     },
     {
-      "id": "search.delete_image",
-      "name": "search.delete_image",
+      "id": "search_delete_image",
+      "name": "search_delete_image",
       "description": "Delete image in search.",
       "tags": [
         "search",
@@ -5204,8 +5204,8 @@
       }
     },
     {
-      "id": "search.list_image",
-      "name": "search.list_image",
+      "id": "search_list_image",
+      "name": "search_list_image",
       "description": "List image in search.",
       "tags": [
         "search",
@@ -5238,8 +5238,8 @@
       }
     },
     {
-      "id": "search.create_video",
-      "name": "search.create_video",
+      "id": "search_create_video",
+      "name": "search_create_video",
       "description": "Create video in search.",
       "tags": [
         "search",
@@ -5275,8 +5275,8 @@
       }
     },
     {
-      "id": "search.get_video",
-      "name": "search.get_video",
+      "id": "search_get_video",
+      "name": "search_get_video",
       "description": "Get video in search.",
       "tags": [
         "search",
@@ -5312,8 +5312,8 @@
       }
     },
     {
-      "id": "search.update_video",
-      "name": "search.update_video",
+      "id": "search_update_video",
+      "name": "search_update_video",
       "description": "Update video in search.",
       "tags": [
         "search",
@@ -5354,8 +5354,8 @@
       }
     },
     {
-      "id": "search.delete_video",
-      "name": "search.delete_video",
+      "id": "search_delete_video",
+      "name": "search_delete_video",
       "description": "Delete video in search.",
       "tags": [
         "search",
@@ -5391,8 +5391,8 @@
       }
     },
     {
-      "id": "search.list_video",
-      "name": "search.list_video",
+      "id": "search_list_video",
+      "name": "search_list_video",
       "description": "List video in search.",
       "tags": [
         "search",
@@ -5425,8 +5425,8 @@
       }
     },
     {
-      "id": "search.create_faq",
-      "name": "search.create_faq",
+      "id": "search_create_faq",
+      "name": "search_create_faq",
       "description": "Create faq in search.",
       "tags": [
         "search",
@@ -5462,8 +5462,8 @@
       }
     },
     {
-      "id": "search.get_faq",
-      "name": "search.get_faq",
+      "id": "search_get_faq",
+      "name": "search_get_faq",
       "description": "Get faq in search.",
       "tags": [
         "search",
@@ -5499,8 +5499,8 @@
       }
     },
     {
-      "id": "search.update_faq",
-      "name": "search.update_faq",
+      "id": "search_update_faq",
+      "name": "search_update_faq",
       "description": "Update faq in search.",
       "tags": [
         "search",
@@ -5541,8 +5541,8 @@
       }
     },
     {
-      "id": "search.delete_faq",
-      "name": "search.delete_faq",
+      "id": "search_delete_faq",
+      "name": "search_delete_faq",
       "description": "Delete faq in search.",
       "tags": [
         "search",
@@ -5578,8 +5578,8 @@
       }
     },
     {
-      "id": "search.list_faq",
-      "name": "search.list_faq",
+      "id": "search_list_faq",
+      "name": "search_list_faq",
       "description": "List faq in search.",
       "tags": [
         "search",
@@ -5612,8 +5612,8 @@
       }
     },
     {
-      "id": "crm.create_lead",
-      "name": "crm.create_lead",
+      "id": "crm_create_lead",
+      "name": "crm_create_lead",
       "description": "Create lead in crm.",
       "tags": [
         "crm",
@@ -5649,8 +5649,8 @@
       }
     },
     {
-      "id": "crm.get_lead",
-      "name": "crm.get_lead",
+      "id": "crm_get_lead",
+      "name": "crm_get_lead",
       "description": "Get lead in crm.",
       "tags": [
         "crm",
@@ -5686,8 +5686,8 @@
       }
     },
     {
-      "id": "crm.update_lead",
-      "name": "crm.update_lead",
+      "id": "crm_update_lead",
+      "name": "crm_update_lead",
       "description": "Update lead in crm.",
       "tags": [
         "crm",
@@ -5728,8 +5728,8 @@
       }
     },
     {
-      "id": "crm.delete_lead",
-      "name": "crm.delete_lead",
+      "id": "crm_delete_lead",
+      "name": "crm_delete_lead",
       "description": "Delete lead in crm.",
       "tags": [
         "crm",
@@ -5765,8 +5765,8 @@
       }
     },
     {
-      "id": "crm.list_lead",
-      "name": "crm.list_lead",
+      "id": "crm_list_lead",
+      "name": "crm_list_lead",
       "description": "List lead in crm.",
       "tags": [
         "crm",
@@ -5799,8 +5799,8 @@
       }
     },
     {
-      "id": "crm.create_contact",
-      "name": "crm.create_contact",
+      "id": "crm_create_contact",
+      "name": "crm_create_contact",
       "description": "Create contact in crm.",
       "tags": [
         "crm",
@@ -5836,8 +5836,8 @@
       }
     },
     {
-      "id": "crm.get_contact",
-      "name": "crm.get_contact",
+      "id": "crm_get_contact",
+      "name": "crm_get_contact",
       "description": "Get contact in crm.",
       "tags": [
         "crm",
@@ -5873,8 +5873,8 @@
       }
     },
     {
-      "id": "crm.update_contact",
-      "name": "crm.update_contact",
+      "id": "crm_update_contact",
+      "name": "crm_update_contact",
       "description": "Update contact in crm.",
       "tags": [
         "crm",
@@ -5915,8 +5915,8 @@
       }
     },
     {
-      "id": "crm.delete_contact",
-      "name": "crm.delete_contact",
+      "id": "crm_delete_contact",
+      "name": "crm_delete_contact",
       "description": "Delete contact in crm.",
       "tags": [
         "crm",
@@ -5952,8 +5952,8 @@
       }
     },
     {
-      "id": "crm.list_contact",
-      "name": "crm.list_contact",
+      "id": "crm_list_contact",
+      "name": "crm_list_contact",
       "description": "List contact in crm.",
       "tags": [
         "crm",
@@ -5986,8 +5986,8 @@
       }
     },
     {
-      "id": "crm.create_account",
-      "name": "crm.create_account",
+      "id": "crm_create_account",
+      "name": "crm_create_account",
       "description": "Create account in crm.",
       "tags": [
         "crm",
@@ -6023,8 +6023,8 @@
       }
     },
     {
-      "id": "crm.get_account",
-      "name": "crm.get_account",
+      "id": "crm_get_account",
+      "name": "crm_get_account",
       "description": "Get account in crm.",
       "tags": [
         "crm",
@@ -6060,8 +6060,8 @@
       }
     },
     {
-      "id": "crm.update_account",
-      "name": "crm.update_account",
+      "id": "crm_update_account",
+      "name": "crm_update_account",
       "description": "Update account in crm.",
       "tags": [
         "crm",
@@ -6102,8 +6102,8 @@
       }
     },
     {
-      "id": "crm.delete_account",
-      "name": "crm.delete_account",
+      "id": "crm_delete_account",
+      "name": "crm_delete_account",
       "description": "Delete account in crm.",
       "tags": [
         "crm",
@@ -6139,8 +6139,8 @@
       }
     },
     {
-      "id": "crm.list_account",
-      "name": "crm.list_account",
+      "id": "crm_list_account",
+      "name": "crm_list_account",
       "description": "List account in crm.",
       "tags": [
         "crm",
@@ -6173,8 +6173,8 @@
       }
     },
     {
-      "id": "crm.create_opportunity",
-      "name": "crm.create_opportunity",
+      "id": "crm_create_opportunity",
+      "name": "crm_create_opportunity",
       "description": "Create opportunity in crm.",
       "tags": [
         "crm",
@@ -6210,8 +6210,8 @@
       }
     },
     {
-      "id": "crm.get_opportunity",
-      "name": "crm.get_opportunity",
+      "id": "crm_get_opportunity",
+      "name": "crm_get_opportunity",
       "description": "Get opportunity in crm.",
       "tags": [
         "crm",
@@ -6247,8 +6247,8 @@
       }
     },
     {
-      "id": "crm.update_opportunity",
-      "name": "crm.update_opportunity",
+      "id": "crm_update_opportunity",
+      "name": "crm_update_opportunity",
       "description": "Update opportunity in crm.",
       "tags": [
         "crm",
@@ -6289,8 +6289,8 @@
       }
     },
     {
-      "id": "crm.delete_opportunity",
-      "name": "crm.delete_opportunity",
+      "id": "crm_delete_opportunity",
+      "name": "crm_delete_opportunity",
       "description": "Delete opportunity in crm.",
       "tags": [
         "crm",
@@ -6326,8 +6326,8 @@
       }
     },
     {
-      "id": "crm.list_opportunity",
-      "name": "crm.list_opportunity",
+      "id": "crm_list_opportunity",
+      "name": "crm_list_opportunity",
       "description": "List opportunity in crm.",
       "tags": [
         "crm",
@@ -6360,8 +6360,8 @@
       }
     },
     {
-      "id": "crm.create_deal",
-      "name": "crm.create_deal",
+      "id": "crm_create_deal",
+      "name": "crm_create_deal",
       "description": "Create deal in crm.",
       "tags": [
         "crm",
@@ -6397,8 +6397,8 @@
       }
     },
     {
-      "id": "crm.get_deal",
-      "name": "crm.get_deal",
+      "id": "crm_get_deal",
+      "name": "crm_get_deal",
       "description": "Get deal in crm.",
       "tags": [
         "crm",
@@ -6434,8 +6434,8 @@
       }
     },
     {
-      "id": "crm.update_deal",
-      "name": "crm.update_deal",
+      "id": "crm_update_deal",
+      "name": "crm_update_deal",
       "description": "Update deal in crm.",
       "tags": [
         "crm",
@@ -6476,8 +6476,8 @@
       }
     },
     {
-      "id": "crm.delete_deal",
-      "name": "crm.delete_deal",
+      "id": "crm_delete_deal",
+      "name": "crm_delete_deal",
       "description": "Delete deal in crm.",
       "tags": [
         "crm",
@@ -6513,8 +6513,8 @@
       }
     },
     {
-      "id": "crm.list_deal",
-      "name": "crm.list_deal",
+      "id": "crm_list_deal",
+      "name": "crm_list_deal",
       "description": "List deal in crm.",
       "tags": [
         "crm",
@@ -6547,8 +6547,8 @@
       }
     },
     {
-      "id": "crm.create_note",
-      "name": "crm.create_note",
+      "id": "crm_create_note",
+      "name": "crm_create_note",
       "description": "Create note in crm.",
       "tags": [
         "crm",
@@ -6584,8 +6584,8 @@
       }
     },
     {
-      "id": "crm.get_note",
-      "name": "crm.get_note",
+      "id": "crm_get_note",
+      "name": "crm_get_note",
       "description": "Get note in crm.",
       "tags": [
         "crm",
@@ -6621,8 +6621,8 @@
       }
     },
     {
-      "id": "crm.update_note",
-      "name": "crm.update_note",
+      "id": "crm_update_note",
+      "name": "crm_update_note",
       "description": "Update note in crm.",
       "tags": [
         "crm",
@@ -6663,8 +6663,8 @@
       }
     },
     {
-      "id": "crm.delete_note",
-      "name": "crm.delete_note",
+      "id": "crm_delete_note",
+      "name": "crm_delete_note",
       "description": "Delete note in crm.",
       "tags": [
         "crm",
@@ -6700,8 +6700,8 @@
       }
     },
     {
-      "id": "crm.list_note",
-      "name": "crm.list_note",
+      "id": "crm_list_note",
+      "name": "crm_list_note",
       "description": "List note in crm.",
       "tags": [
         "crm",
@@ -6734,8 +6734,8 @@
       }
     },
     {
-      "id": "crm.create_task",
-      "name": "crm.create_task",
+      "id": "crm_create_task",
+      "name": "crm_create_task",
       "description": "Create task in crm.",
       "tags": [
         "crm",
@@ -6771,8 +6771,8 @@
       }
     },
     {
-      "id": "crm.get_task",
-      "name": "crm.get_task",
+      "id": "crm_get_task",
+      "name": "crm_get_task",
       "description": "Get task in crm.",
       "tags": [
         "crm",
@@ -6808,8 +6808,8 @@
       }
     },
     {
-      "id": "crm.update_task",
-      "name": "crm.update_task",
+      "id": "crm_update_task",
+      "name": "crm_update_task",
       "description": "Update task in crm.",
       "tags": [
         "crm",
@@ -6850,8 +6850,8 @@
       }
     },
     {
-      "id": "crm.delete_task",
-      "name": "crm.delete_task",
+      "id": "crm_delete_task",
+      "name": "crm_delete_task",
       "description": "Delete task in crm.",
       "tags": [
         "crm",
@@ -6887,8 +6887,8 @@
       }
     },
     {
-      "id": "crm.list_task",
-      "name": "crm.list_task",
+      "id": "crm_list_task",
+      "name": "crm_list_task",
       "description": "List task in crm.",
       "tags": [
         "crm",
@@ -6921,8 +6921,8 @@
       }
     },
     {
-      "id": "crm.create_pipeline",
-      "name": "crm.create_pipeline",
+      "id": "crm_create_pipeline",
+      "name": "crm_create_pipeline",
       "description": "Create pipeline in crm.",
       "tags": [
         "crm",
@@ -6958,8 +6958,8 @@
       }
     },
     {
-      "id": "crm.get_pipeline",
-      "name": "crm.get_pipeline",
+      "id": "crm_get_pipeline",
+      "name": "crm_get_pipeline",
       "description": "Get pipeline in crm.",
       "tags": [
         "crm",
@@ -6995,8 +6995,8 @@
       }
     },
     {
-      "id": "crm.update_pipeline",
-      "name": "crm.update_pipeline",
+      "id": "crm_update_pipeline",
+      "name": "crm_update_pipeline",
       "description": "Update pipeline in crm.",
       "tags": [
         "crm",
@@ -7037,8 +7037,8 @@
       }
     },
     {
-      "id": "crm.delete_pipeline",
-      "name": "crm.delete_pipeline",
+      "id": "crm_delete_pipeline",
+      "name": "crm_delete_pipeline",
       "description": "Delete pipeline in crm.",
       "tags": [
         "crm",
@@ -7074,8 +7074,8 @@
       }
     },
     {
-      "id": "crm.list_pipeline",
-      "name": "crm.list_pipeline",
+      "id": "crm_list_pipeline",
+      "name": "crm_list_pipeline",
       "description": "List pipeline in crm.",
       "tags": [
         "crm",
@@ -7108,8 +7108,8 @@
       }
     },
     {
-      "id": "crm.create_segment",
-      "name": "crm.create_segment",
+      "id": "crm_create_segment",
+      "name": "crm_create_segment",
       "description": "Create segment in crm.",
       "tags": [
         "crm",
@@ -7145,8 +7145,8 @@
       }
     },
     {
-      "id": "crm.get_segment",
-      "name": "crm.get_segment",
+      "id": "crm_get_segment",
+      "name": "crm_get_segment",
       "description": "Get segment in crm.",
       "tags": [
         "crm",
@@ -7182,8 +7182,8 @@
       }
     },
     {
-      "id": "crm.update_segment",
-      "name": "crm.update_segment",
+      "id": "crm_update_segment",
+      "name": "crm_update_segment",
       "description": "Update segment in crm.",
       "tags": [
         "crm",
@@ -7224,8 +7224,8 @@
       }
     },
     {
-      "id": "crm.delete_segment",
-      "name": "crm.delete_segment",
+      "id": "crm_delete_segment",
+      "name": "crm_delete_segment",
       "description": "Delete segment in crm.",
       "tags": [
         "crm",
@@ -7261,8 +7261,8 @@
       }
     },
     {
-      "id": "crm.list_segment",
-      "name": "crm.list_segment",
+      "id": "crm_list_segment",
+      "name": "crm_list_segment",
       "description": "List segment in crm.",
       "tags": [
         "crm",
@@ -7295,8 +7295,8 @@
       }
     },
     {
-      "id": "crm.create_activity",
-      "name": "crm.create_activity",
+      "id": "crm_create_activity",
+      "name": "crm_create_activity",
       "description": "Create activity in crm.",
       "tags": [
         "crm",
@@ -7332,8 +7332,8 @@
       }
     },
     {
-      "id": "crm.get_activity",
-      "name": "crm.get_activity",
+      "id": "crm_get_activity",
+      "name": "crm_get_activity",
       "description": "Get activity in crm.",
       "tags": [
         "crm",
@@ -7369,8 +7369,8 @@
       }
     },
     {
-      "id": "crm.update_activity",
-      "name": "crm.update_activity",
+      "id": "crm_update_activity",
+      "name": "crm_update_activity",
       "description": "Update activity in crm.",
       "tags": [
         "crm",
@@ -7411,8 +7411,8 @@
       }
     },
     {
-      "id": "crm.delete_activity",
-      "name": "crm.delete_activity",
+      "id": "crm_delete_activity",
+      "name": "crm_delete_activity",
       "description": "Delete activity in crm.",
       "tags": [
         "crm",
@@ -7448,8 +7448,8 @@
       }
     },
     {
-      "id": "crm.list_activity",
-      "name": "crm.list_activity",
+      "id": "crm_list_activity",
+      "name": "crm_list_activity",
       "description": "List activity in crm.",
       "tags": [
         "crm",
@@ -7482,8 +7482,8 @@
       }
     },
     {
-      "id": "docs.create_document",
-      "name": "docs.create_document",
+      "id": "docs_create_document",
+      "name": "docs_create_document",
       "description": "Create document in docs.",
       "tags": [
         "docs",
@@ -7519,8 +7519,8 @@
       }
     },
     {
-      "id": "docs.get_document",
-      "name": "docs.get_document",
+      "id": "docs_get_document",
+      "name": "docs_get_document",
       "description": "Get document in docs.",
       "tags": [
         "docs",
@@ -7556,8 +7556,8 @@
       }
     },
     {
-      "id": "docs.update_document",
-      "name": "docs.update_document",
+      "id": "docs_update_document",
+      "name": "docs_update_document",
       "description": "Update document in docs.",
       "tags": [
         "docs",
@@ -7598,8 +7598,8 @@
       }
     },
     {
-      "id": "docs.delete_document",
-      "name": "docs.delete_document",
+      "id": "docs_delete_document",
+      "name": "docs_delete_document",
       "description": "Delete document in docs.",
       "tags": [
         "docs",
@@ -7635,8 +7635,8 @@
       }
     },
     {
-      "id": "docs.list_document",
-      "name": "docs.list_document",
+      "id": "docs_list_document",
+      "name": "docs_list_document",
       "description": "List document in docs.",
       "tags": [
         "docs",
@@ -7669,8 +7669,8 @@
       }
     },
     {
-      "id": "docs.create_template",
-      "name": "docs.create_template",
+      "id": "docs_create_template",
+      "name": "docs_create_template",
       "description": "Create template in docs.",
       "tags": [
         "docs",
@@ -7706,8 +7706,8 @@
       }
     },
     {
-      "id": "docs.get_template",
-      "name": "docs.get_template",
+      "id": "docs_get_template",
+      "name": "docs_get_template",
       "description": "Get template in docs.",
       "tags": [
         "docs",
@@ -7743,8 +7743,8 @@
       }
     },
     {
-      "id": "docs.update_template",
-      "name": "docs.update_template",
+      "id": "docs_update_template",
+      "name": "docs_update_template",
       "description": "Update template in docs.",
       "tags": [
         "docs",
@@ -7785,8 +7785,8 @@
       }
     },
     {
-      "id": "docs.delete_template",
-      "name": "docs.delete_template",
+      "id": "docs_delete_template",
+      "name": "docs_delete_template",
       "description": "Delete template in docs.",
       "tags": [
         "docs",
@@ -7822,8 +7822,8 @@
       }
     },
     {
-      "id": "docs.list_template",
-      "name": "docs.list_template",
+      "id": "docs_list_template",
+      "name": "docs_list_template",
       "description": "List template in docs.",
       "tags": [
         "docs",
@@ -7856,8 +7856,8 @@
       }
     },
     {
-      "id": "docs.create_folder",
-      "name": "docs.create_folder",
+      "id": "docs_create_folder",
+      "name": "docs_create_folder",
       "description": "Create folder in docs.",
       "tags": [
         "docs",
@@ -7893,8 +7893,8 @@
       }
     },
     {
-      "id": "docs.get_folder",
-      "name": "docs.get_folder",
+      "id": "docs_get_folder",
+      "name": "docs_get_folder",
       "description": "Get folder in docs.",
       "tags": [
         "docs",
@@ -7930,8 +7930,8 @@
       }
     },
     {
-      "id": "docs.update_folder",
-      "name": "docs.update_folder",
+      "id": "docs_update_folder",
+      "name": "docs_update_folder",
       "description": "Update folder in docs.",
       "tags": [
         "docs",
@@ -7972,8 +7972,8 @@
       }
     },
     {
-      "id": "docs.delete_folder",
-      "name": "docs.delete_folder",
+      "id": "docs_delete_folder",
+      "name": "docs_delete_folder",
       "description": "Delete folder in docs.",
       "tags": [
         "docs",
@@ -8009,8 +8009,8 @@
       }
     },
     {
-      "id": "docs.list_folder",
-      "name": "docs.list_folder",
+      "id": "docs_list_folder",
+      "name": "docs_list_folder",
       "description": "List folder in docs.",
       "tags": [
         "docs",
@@ -8043,8 +8043,8 @@
       }
     },
     {
-      "id": "docs.create_share",
-      "name": "docs.create_share",
+      "id": "docs_create_share",
+      "name": "docs_create_share",
       "description": "Create share in docs.",
       "tags": [
         "docs",
@@ -8080,8 +8080,8 @@
       }
     },
     {
-      "id": "docs.get_share",
-      "name": "docs.get_share",
+      "id": "docs_get_share",
+      "name": "docs_get_share",
       "description": "Get share in docs.",
       "tags": [
         "docs",
@@ -8117,8 +8117,8 @@
       }
     },
     {
-      "id": "docs.update_share",
-      "name": "docs.update_share",
+      "id": "docs_update_share",
+      "name": "docs_update_share",
       "description": "Update share in docs.",
       "tags": [
         "docs",
@@ -8159,8 +8159,8 @@
       }
     },
     {
-      "id": "docs.delete_share",
-      "name": "docs.delete_share",
+      "id": "docs_delete_share",
+      "name": "docs_delete_share",
       "description": "Delete share in docs.",
       "tags": [
         "docs",
@@ -8196,8 +8196,8 @@
       }
     },
     {
-      "id": "docs.list_share",
-      "name": "docs.list_share",
+      "id": "docs_list_share",
+      "name": "docs_list_share",
       "description": "List share in docs.",
       "tags": [
         "docs",
@@ -8230,8 +8230,8 @@
       }
     },
     {
-      "id": "docs.create_version",
-      "name": "docs.create_version",
+      "id": "docs_create_version",
+      "name": "docs_create_version",
       "description": "Create version in docs.",
       "tags": [
         "docs",
@@ -8267,8 +8267,8 @@
       }
     },
     {
-      "id": "docs.get_version",
-      "name": "docs.get_version",
+      "id": "docs_get_version",
+      "name": "docs_get_version",
       "description": "Get version in docs.",
       "tags": [
         "docs",
@@ -8304,8 +8304,8 @@
       }
     },
     {
-      "id": "docs.update_version",
-      "name": "docs.update_version",
+      "id": "docs_update_version",
+      "name": "docs_update_version",
       "description": "Update version in docs.",
       "tags": [
         "docs",
@@ -8346,8 +8346,8 @@
       }
     },
     {
-      "id": "docs.delete_version",
-      "name": "docs.delete_version",
+      "id": "docs_delete_version",
+      "name": "docs_delete_version",
       "description": "Delete version in docs.",
       "tags": [
         "docs",
@@ -8383,8 +8383,8 @@
       }
     },
     {
-      "id": "docs.list_version",
-      "name": "docs.list_version",
+      "id": "docs_list_version",
+      "name": "docs_list_version",
       "description": "List version in docs.",
       "tags": [
         "docs",
@@ -8417,8 +8417,8 @@
       }
     },
     {
-      "id": "docs.create_comment",
-      "name": "docs.create_comment",
+      "id": "docs_create_comment",
+      "name": "docs_create_comment",
       "description": "Create comment in docs.",
       "tags": [
         "docs",
@@ -8454,8 +8454,8 @@
       }
     },
     {
-      "id": "docs.get_comment",
-      "name": "docs.get_comment",
+      "id": "docs_get_comment",
+      "name": "docs_get_comment",
       "description": "Get comment in docs.",
       "tags": [
         "docs",
@@ -8491,8 +8491,8 @@
       }
     },
     {
-      "id": "docs.update_comment",
-      "name": "docs.update_comment",
+      "id": "docs_update_comment",
+      "name": "docs_update_comment",
       "description": "Update comment in docs.",
       "tags": [
         "docs",
@@ -8533,8 +8533,8 @@
       }
     },
     {
-      "id": "docs.delete_comment",
-      "name": "docs.delete_comment",
+      "id": "docs_delete_comment",
+      "name": "docs_delete_comment",
       "description": "Delete comment in docs.",
       "tags": [
         "docs",
@@ -8570,8 +8570,8 @@
       }
     },
     {
-      "id": "docs.list_comment",
-      "name": "docs.list_comment",
+      "id": "docs_list_comment",
+      "name": "docs_list_comment",
       "description": "List comment in docs.",
       "tags": [
         "docs",
@@ -8604,8 +8604,8 @@
       }
     },
     {
-      "id": "docs.create_section",
-      "name": "docs.create_section",
+      "id": "docs_create_section",
+      "name": "docs_create_section",
       "description": "Create section in docs.",
       "tags": [
         "docs",
@@ -8641,8 +8641,8 @@
       }
     },
     {
-      "id": "docs.get_section",
-      "name": "docs.get_section",
+      "id": "docs_get_section",
+      "name": "docs_get_section",
       "description": "Get section in docs.",
       "tags": [
         "docs",
@@ -8678,8 +8678,8 @@
       }
     },
     {
-      "id": "docs.update_section",
-      "name": "docs.update_section",
+      "id": "docs_update_section",
+      "name": "docs_update_section",
       "description": "Update section in docs.",
       "tags": [
         "docs",
@@ -8720,8 +8720,8 @@
       }
     },
     {
-      "id": "docs.delete_section",
-      "name": "docs.delete_section",
+      "id": "docs_delete_section",
+      "name": "docs_delete_section",
       "description": "Delete section in docs.",
       "tags": [
         "docs",
@@ -8757,8 +8757,8 @@
       }
     },
     {
-      "id": "docs.list_section",
-      "name": "docs.list_section",
+      "id": "docs_list_section",
+      "name": "docs_list_section",
       "description": "List section in docs.",
       "tags": [
         "docs",
@@ -8791,8 +8791,8 @@
       }
     },
     {
-      "id": "docs.create_outline",
-      "name": "docs.create_outline",
+      "id": "docs_create_outline",
+      "name": "docs_create_outline",
       "description": "Create outline in docs.",
       "tags": [
         "docs",
@@ -8828,8 +8828,8 @@
       }
     },
     {
-      "id": "docs.get_outline",
-      "name": "docs.get_outline",
+      "id": "docs_get_outline",
+      "name": "docs_get_outline",
       "description": "Get outline in docs.",
       "tags": [
         "docs",
@@ -8865,8 +8865,8 @@
       }
     },
     {
-      "id": "docs.update_outline",
-      "name": "docs.update_outline",
+      "id": "docs_update_outline",
+      "name": "docs_update_outline",
       "description": "Update outline in docs.",
       "tags": [
         "docs",
@@ -8907,8 +8907,8 @@
       }
     },
     {
-      "id": "docs.delete_outline",
-      "name": "docs.delete_outline",
+      "id": "docs_delete_outline",
+      "name": "docs_delete_outline",
       "description": "Delete outline in docs.",
       "tags": [
         "docs",
@@ -8944,8 +8944,8 @@
       }
     },
     {
-      "id": "docs.list_outline",
-      "name": "docs.list_outline",
+      "id": "docs_list_outline",
+      "name": "docs_list_outline",
       "description": "List outline in docs.",
       "tags": [
         "docs",
@@ -8978,8 +8978,8 @@
       }
     },
     {
-      "id": "docs.create_table",
-      "name": "docs.create_table",
+      "id": "docs_create_table",
+      "name": "docs_create_table",
       "description": "Create table in docs.",
       "tags": [
         "docs",
@@ -9015,8 +9015,8 @@
       }
     },
     {
-      "id": "docs.get_table",
-      "name": "docs.get_table",
+      "id": "docs_get_table",
+      "name": "docs_get_table",
       "description": "Get table in docs.",
       "tags": [
         "docs",
@@ -9052,8 +9052,8 @@
       }
     },
     {
-      "id": "docs.update_table",
-      "name": "docs.update_table",
+      "id": "docs_update_table",
+      "name": "docs_update_table",
       "description": "Update table in docs.",
       "tags": [
         "docs",
@@ -9094,8 +9094,8 @@
       }
     },
     {
-      "id": "docs.delete_table",
-      "name": "docs.delete_table",
+      "id": "docs_delete_table",
+      "name": "docs_delete_table",
       "description": "Delete table in docs.",
       "tags": [
         "docs",
@@ -9131,8 +9131,8 @@
       }
     },
     {
-      "id": "docs.list_table",
-      "name": "docs.list_table",
+      "id": "docs_list_table",
+      "name": "docs_list_table",
       "description": "List table in docs.",
       "tags": [
         "docs",
@@ -9165,8 +9165,8 @@
       }
     },
     {
-      "id": "docs.create_export",
-      "name": "docs.create_export",
+      "id": "docs_create_export",
+      "name": "docs_create_export",
       "description": "Create export in docs.",
       "tags": [
         "docs",
@@ -9202,8 +9202,8 @@
       }
     },
     {
-      "id": "docs.get_export",
-      "name": "docs.get_export",
+      "id": "docs_get_export",
+      "name": "docs_get_export",
       "description": "Get export in docs.",
       "tags": [
         "docs",
@@ -9239,8 +9239,8 @@
       }
     },
     {
-      "id": "docs.update_export",
-      "name": "docs.update_export",
+      "id": "docs_update_export",
+      "name": "docs_update_export",
       "description": "Update export in docs.",
       "tags": [
         "docs",
@@ -9281,8 +9281,8 @@
       }
     },
     {
-      "id": "docs.delete_export",
-      "name": "docs.delete_export",
+      "id": "docs_delete_export",
+      "name": "docs_delete_export",
       "description": "Delete export in docs.",
       "tags": [
         "docs",
@@ -9318,8 +9318,8 @@
       }
     },
     {
-      "id": "docs.list_export",
-      "name": "docs.list_export",
+      "id": "docs_list_export",
+      "name": "docs_list_export",
       "description": "List export in docs.",
       "tags": [
         "docs",
@@ -9352,8 +9352,8 @@
       }
     },
     {
-      "id": "tickets.create_ticket",
-      "name": "tickets.create_ticket",
+      "id": "tickets_create_ticket",
+      "name": "tickets_create_ticket",
       "description": "Create ticket in tickets.",
       "tags": [
         "tickets",
@@ -9389,8 +9389,8 @@
       }
     },
     {
-      "id": "tickets.get_ticket",
-      "name": "tickets.get_ticket",
+      "id": "tickets_get_ticket",
+      "name": "tickets_get_ticket",
       "description": "Get ticket in tickets.",
       "tags": [
         "tickets",
@@ -9426,8 +9426,8 @@
       }
     },
     {
-      "id": "tickets.update_ticket",
-      "name": "tickets.update_ticket",
+      "id": "tickets_update_ticket",
+      "name": "tickets_update_ticket",
       "description": "Update ticket in tickets.",
       "tags": [
         "tickets",
@@ -9468,8 +9468,8 @@
       }
     },
     {
-      "id": "tickets.delete_ticket",
-      "name": "tickets.delete_ticket",
+      "id": "tickets_delete_ticket",
+      "name": "tickets_delete_ticket",
       "description": "Delete ticket in tickets.",
       "tags": [
         "tickets",
@@ -9505,8 +9505,8 @@
       }
     },
     {
-      "id": "tickets.list_ticket",
-      "name": "tickets.list_ticket",
+      "id": "tickets_list_ticket",
+      "name": "tickets_list_ticket",
       "description": "List ticket in tickets.",
       "tags": [
         "tickets",
@@ -9539,8 +9539,8 @@
       }
     },
     {
-      "id": "tickets.create_case",
-      "name": "tickets.create_case",
+      "id": "tickets_create_case",
+      "name": "tickets_create_case",
       "description": "Create case in tickets.",
       "tags": [
         "tickets",
@@ -9576,8 +9576,8 @@
       }
     },
     {
-      "id": "tickets.get_case",
-      "name": "tickets.get_case",
+      "id": "tickets_get_case",
+      "name": "tickets_get_case",
       "description": "Get case in tickets.",
       "tags": [
         "tickets",
@@ -9613,8 +9613,8 @@
       }
     },
     {
-      "id": "tickets.update_case",
-      "name": "tickets.update_case",
+      "id": "tickets_update_case",
+      "name": "tickets_update_case",
       "description": "Update case in tickets.",
       "tags": [
         "tickets",
@@ -9655,8 +9655,8 @@
       }
     },
     {
-      "id": "tickets.delete_case",
-      "name": "tickets.delete_case",
+      "id": "tickets_delete_case",
+      "name": "tickets_delete_case",
       "description": "Delete case in tickets.",
       "tags": [
         "tickets",
@@ -9692,8 +9692,8 @@
       }
     },
     {
-      "id": "tickets.list_case",
-      "name": "tickets.list_case",
+      "id": "tickets_list_case",
+      "name": "tickets_list_case",
       "description": "List case in tickets.",
       "tags": [
         "tickets",
@@ -9726,8 +9726,8 @@
       }
     },
     {
-      "id": "tickets.create_priority",
-      "name": "tickets.create_priority",
+      "id": "tickets_create_priority",
+      "name": "tickets_create_priority",
       "description": "Create priority in tickets.",
       "tags": [
         "tickets",
@@ -9763,8 +9763,8 @@
       }
     },
     {
-      "id": "tickets.get_priority",
-      "name": "tickets.get_priority",
+      "id": "tickets_get_priority",
+      "name": "tickets_get_priority",
       "description": "Get priority in tickets.",
       "tags": [
         "tickets",
@@ -9800,8 +9800,8 @@
       }
     },
     {
-      "id": "tickets.update_priority",
-      "name": "tickets.update_priority",
+      "id": "tickets_update_priority",
+      "name": "tickets_update_priority",
       "description": "Update priority in tickets.",
       "tags": [
         "tickets",
@@ -9842,8 +9842,8 @@
       }
     },
     {
-      "id": "tickets.delete_priority",
-      "name": "tickets.delete_priority",
+      "id": "tickets_delete_priority",
+      "name": "tickets_delete_priority",
       "description": "Delete priority in tickets.",
       "tags": [
         "tickets",
@@ -9879,8 +9879,8 @@
       }
     },
     {
-      "id": "tickets.list_priority",
-      "name": "tickets.list_priority",
+      "id": "tickets_list_priority",
+      "name": "tickets_list_priority",
       "description": "List priority in tickets.",
       "tags": [
         "tickets",
@@ -9913,8 +9913,8 @@
       }
     },
     {
-      "id": "tickets.create_assignment",
-      "name": "tickets.create_assignment",
+      "id": "tickets_create_assignment",
+      "name": "tickets_create_assignment",
       "description": "Create assignment in tickets.",
       "tags": [
         "tickets",
@@ -9950,8 +9950,8 @@
       }
     },
     {
-      "id": "tickets.get_assignment",
-      "name": "tickets.get_assignment",
+      "id": "tickets_get_assignment",
+      "name": "tickets_get_assignment",
       "description": "Get assignment in tickets.",
       "tags": [
         "tickets",
@@ -9987,8 +9987,8 @@
       }
     },
     {
-      "id": "tickets.update_assignment",
-      "name": "tickets.update_assignment",
+      "id": "tickets_update_assignment",
+      "name": "tickets_update_assignment",
       "description": "Update assignment in tickets.",
       "tags": [
         "tickets",
@@ -10029,8 +10029,8 @@
       }
     },
     {
-      "id": "tickets.delete_assignment",
-      "name": "tickets.delete_assignment",
+      "id": "tickets_delete_assignment",
+      "name": "tickets_delete_assignment",
       "description": "Delete assignment in tickets.",
       "tags": [
         "tickets",
@@ -10066,8 +10066,8 @@
       }
     },
     {
-      "id": "tickets.list_assignment",
-      "name": "tickets.list_assignment",
+      "id": "tickets_list_assignment",
+      "name": "tickets_list_assignment",
       "description": "List assignment in tickets.",
       "tags": [
         "tickets",
@@ -10100,8 +10100,8 @@
       }
     },
     {
-      "id": "tickets.create_status",
-      "name": "tickets.create_status",
+      "id": "tickets_create_status",
+      "name": "tickets_create_status",
       "description": "Create status in tickets.",
       "tags": [
         "tickets",
@@ -10137,8 +10137,8 @@
       }
     },
     {
-      "id": "tickets.get_status",
-      "name": "tickets.get_status",
+      "id": "tickets_get_status",
+      "name": "tickets_get_status",
       "description": "Get status in tickets.",
       "tags": [
         "tickets",
@@ -10174,8 +10174,8 @@
       }
     },
     {
-      "id": "tickets.update_status",
-      "name": "tickets.update_status",
+      "id": "tickets_update_status",
+      "name": "tickets_update_status",
       "description": "Update status in tickets.",
       "tags": [
         "tickets",
@@ -10216,8 +10216,8 @@
       }
     },
     {
-      "id": "tickets.delete_status",
-      "name": "tickets.delete_status",
+      "id": "tickets_delete_status",
+      "name": "tickets_delete_status",
       "description": "Delete status in tickets.",
       "tags": [
         "tickets",
@@ -10253,8 +10253,8 @@
       }
     },
     {
-      "id": "tickets.list_status",
-      "name": "tickets.list_status",
+      "id": "tickets_list_status",
+      "name": "tickets_list_status",
       "description": "List status in tickets.",
       "tags": [
         "tickets",
@@ -10287,8 +10287,8 @@
       }
     },
     {
-      "id": "tickets.create_sla",
-      "name": "tickets.create_sla",
+      "id": "tickets_create_sla",
+      "name": "tickets_create_sla",
       "description": "Create sla in tickets.",
       "tags": [
         "tickets",
@@ -10324,8 +10324,8 @@
       }
     },
     {
-      "id": "tickets.get_sla",
-      "name": "tickets.get_sla",
+      "id": "tickets_get_sla",
+      "name": "tickets_get_sla",
       "description": "Get sla in tickets.",
       "tags": [
         "tickets",
@@ -10361,8 +10361,8 @@
       }
     },
     {
-      "id": "tickets.update_sla",
-      "name": "tickets.update_sla",
+      "id": "tickets_update_sla",
+      "name": "tickets_update_sla",
       "description": "Update sla in tickets.",
       "tags": [
         "tickets",
@@ -10403,8 +10403,8 @@
       }
     },
     {
-      "id": "tickets.delete_sla",
-      "name": "tickets.delete_sla",
+      "id": "tickets_delete_sla",
+      "name": "tickets_delete_sla",
       "description": "Delete sla in tickets.",
       "tags": [
         "tickets",
@@ -10440,8 +10440,8 @@
       }
     },
     {
-      "id": "tickets.list_sla",
-      "name": "tickets.list_sla",
+      "id": "tickets_list_sla",
+      "name": "tickets_list_sla",
       "description": "List sla in tickets.",
       "tags": [
         "tickets",
@@ -10474,8 +10474,8 @@
       }
     },
     {
-      "id": "tickets.create_category",
-      "name": "tickets.create_category",
+      "id": "tickets_create_category",
+      "name": "tickets_create_category",
       "description": "Create category in tickets.",
       "tags": [
         "tickets",
@@ -10511,8 +10511,8 @@
       }
     },
     {
-      "id": "tickets.get_category",
-      "name": "tickets.get_category",
+      "id": "tickets_get_category",
+      "name": "tickets_get_category",
       "description": "Get category in tickets.",
       "tags": [
         "tickets",
@@ -10548,8 +10548,8 @@
       }
     },
     {
-      "id": "tickets.update_category",
-      "name": "tickets.update_category",
+      "id": "tickets_update_category",
+      "name": "tickets_update_category",
       "description": "Update category in tickets.",
       "tags": [
         "tickets",
@@ -10590,8 +10590,8 @@
       }
     },
     {
-      "id": "tickets.delete_category",
-      "name": "tickets.delete_category",
+      "id": "tickets_delete_category",
+      "name": "tickets_delete_category",
       "description": "Delete category in tickets.",
       "tags": [
         "tickets",
@@ -10627,8 +10627,8 @@
       }
     },
     {
-      "id": "tickets.list_category",
-      "name": "tickets.list_category",
+      "id": "tickets_list_category",
+      "name": "tickets_list_category",
       "description": "List category in tickets.",
       "tags": [
         "tickets",
@@ -10661,8 +10661,8 @@
       }
     },
     {
-      "id": "tickets.create_tag",
-      "name": "tickets.create_tag",
+      "id": "tickets_create_tag",
+      "name": "tickets_create_tag",
       "description": "Create tag in tickets.",
       "tags": [
         "tickets",
@@ -10698,8 +10698,8 @@
       }
     },
     {
-      "id": "tickets.get_tag",
-      "name": "tickets.get_tag",
+      "id": "tickets_get_tag",
+      "name": "tickets_get_tag",
       "description": "Get tag in tickets.",
       "tags": [
         "tickets",
@@ -10735,8 +10735,8 @@
       }
     },
     {
-      "id": "tickets.update_tag",
-      "name": "tickets.update_tag",
+      "id": "tickets_update_tag",
+      "name": "tickets_update_tag",
       "description": "Update tag in tickets.",
       "tags": [
         "tickets",
@@ -10777,8 +10777,8 @@
       }
     },
     {
-      "id": "tickets.delete_tag",
-      "name": "tickets.delete_tag",
+      "id": "tickets_delete_tag",
+      "name": "tickets_delete_tag",
       "description": "Delete tag in tickets.",
       "tags": [
         "tickets",
@@ -10814,8 +10814,8 @@
       }
     },
     {
-      "id": "tickets.list_tag",
-      "name": "tickets.list_tag",
+      "id": "tickets_list_tag",
+      "name": "tickets_list_tag",
       "description": "List tag in tickets.",
       "tags": [
         "tickets",
@@ -10848,8 +10848,8 @@
       }
     },
     {
-      "id": "tickets.create_comment",
-      "name": "tickets.create_comment",
+      "id": "tickets_create_comment",
+      "name": "tickets_create_comment",
       "description": "Create comment in tickets.",
       "tags": [
         "tickets",
@@ -10885,8 +10885,8 @@
       }
     },
     {
-      "id": "tickets.get_comment",
-      "name": "tickets.get_comment",
+      "id": "tickets_get_comment",
+      "name": "tickets_get_comment",
       "description": "Get comment in tickets.",
       "tags": [
         "tickets",
@@ -10922,8 +10922,8 @@
       }
     },
     {
-      "id": "tickets.update_comment",
-      "name": "tickets.update_comment",
+      "id": "tickets_update_comment",
+      "name": "tickets_update_comment",
       "description": "Update comment in tickets.",
       "tags": [
         "tickets",
@@ -10964,8 +10964,8 @@
       }
     },
     {
-      "id": "tickets.delete_comment",
-      "name": "tickets.delete_comment",
+      "id": "tickets_delete_comment",
+      "name": "tickets_delete_comment",
       "description": "Delete comment in tickets.",
       "tags": [
         "tickets",
@@ -11001,8 +11001,8 @@
       }
     },
     {
-      "id": "tickets.list_comment",
-      "name": "tickets.list_comment",
+      "id": "tickets_list_comment",
+      "name": "tickets_list_comment",
       "description": "List comment in tickets.",
       "tags": [
         "tickets",
@@ -11035,8 +11035,8 @@
       }
     },
     {
-      "id": "tickets.create_resolution",
-      "name": "tickets.create_resolution",
+      "id": "tickets_create_resolution",
+      "name": "tickets_create_resolution",
       "description": "Create resolution in tickets.",
       "tags": [
         "tickets",
@@ -11072,8 +11072,8 @@
       }
     },
     {
-      "id": "tickets.get_resolution",
-      "name": "tickets.get_resolution",
+      "id": "tickets_get_resolution",
+      "name": "tickets_get_resolution",
       "description": "Get resolution in tickets.",
       "tags": [
         "tickets",
@@ -11109,8 +11109,8 @@
       }
     },
     {
-      "id": "tickets.update_resolution",
-      "name": "tickets.update_resolution",
+      "id": "tickets_update_resolution",
+      "name": "tickets_update_resolution",
       "description": "Update resolution in tickets.",
       "tags": [
         "tickets",
@@ -11151,8 +11151,8 @@
       }
     },
     {
-      "id": "tickets.delete_resolution",
-      "name": "tickets.delete_resolution",
+      "id": "tickets_delete_resolution",
+      "name": "tickets_delete_resolution",
       "description": "Delete resolution in tickets.",
       "tags": [
         "tickets",
@@ -11188,8 +11188,8 @@
       }
     },
     {
-      "id": "tickets.list_resolution",
-      "name": "tickets.list_resolution",
+      "id": "tickets_list_resolution",
+      "name": "tickets_list_resolution",
       "description": "List resolution in tickets.",
       "tags": [
         "tickets",
@@ -11222,8 +11222,8 @@
       }
     },
     {
-      "id": "travel.create_flight",
-      "name": "travel.create_flight",
+      "id": "travel_create_flight",
+      "name": "travel_create_flight",
       "description": "Create flight in travel.",
       "tags": [
         "travel",
@@ -11259,8 +11259,8 @@
       }
     },
     {
-      "id": "travel.get_flight",
-      "name": "travel.get_flight",
+      "id": "travel_get_flight",
+      "name": "travel_get_flight",
       "description": "Get flight in travel.",
       "tags": [
         "travel",
@@ -11296,8 +11296,8 @@
       }
     },
     {
-      "id": "travel.update_flight",
-      "name": "travel.update_flight",
+      "id": "travel_update_flight",
+      "name": "travel_update_flight",
       "description": "Update flight in travel.",
       "tags": [
         "travel",
@@ -11338,8 +11338,8 @@
       }
     },
     {
-      "id": "travel.delete_flight",
-      "name": "travel.delete_flight",
+      "id": "travel_delete_flight",
+      "name": "travel_delete_flight",
       "description": "Delete flight in travel.",
       "tags": [
         "travel",
@@ -11375,8 +11375,8 @@
       }
     },
     {
-      "id": "travel.list_flight",
-      "name": "travel.list_flight",
+      "id": "travel_list_flight",
+      "name": "travel_list_flight",
       "description": "List flight in travel.",
       "tags": [
         "travel",
@@ -11409,8 +11409,8 @@
       }
     },
     {
-      "id": "travel.create_hotel",
-      "name": "travel.create_hotel",
+      "id": "travel_create_hotel",
+      "name": "travel_create_hotel",
       "description": "Create hotel in travel.",
       "tags": [
         "travel",
@@ -11446,8 +11446,8 @@
       }
     },
     {
-      "id": "travel.get_hotel",
-      "name": "travel.get_hotel",
+      "id": "travel_get_hotel",
+      "name": "travel_get_hotel",
       "description": "Get hotel in travel.",
       "tags": [
         "travel",
@@ -11483,8 +11483,8 @@
       }
     },
     {
-      "id": "travel.update_hotel",
-      "name": "travel.update_hotel",
+      "id": "travel_update_hotel",
+      "name": "travel_update_hotel",
       "description": "Update hotel in travel.",
       "tags": [
         "travel",
@@ -11525,8 +11525,8 @@
       }
     },
     {
-      "id": "travel.delete_hotel",
-      "name": "travel.delete_hotel",
+      "id": "travel_delete_hotel",
+      "name": "travel_delete_hotel",
       "description": "Delete hotel in travel.",
       "tags": [
         "travel",
@@ -11562,8 +11562,8 @@
       }
     },
     {
-      "id": "travel.list_hotel",
-      "name": "travel.list_hotel",
+      "id": "travel_list_hotel",
+      "name": "travel_list_hotel",
       "description": "List hotel in travel.",
       "tags": [
         "travel",
@@ -11596,8 +11596,8 @@
       }
     },
     {
-      "id": "travel.create_car",
-      "name": "travel.create_car",
+      "id": "travel_create_car",
+      "name": "travel_create_car",
       "description": "Create car in travel.",
       "tags": [
         "travel",
@@ -11633,8 +11633,8 @@
       }
     },
     {
-      "id": "travel.get_car",
-      "name": "travel.get_car",
+      "id": "travel_get_car",
+      "name": "travel_get_car",
       "description": "Get car in travel.",
       "tags": [
         "travel",
@@ -11670,8 +11670,8 @@
       }
     },
     {
-      "id": "travel.update_car",
-      "name": "travel.update_car",
+      "id": "travel_update_car",
+      "name": "travel_update_car",
       "description": "Update car in travel.",
       "tags": [
         "travel",
@@ -11712,8 +11712,8 @@
       }
     },
     {
-      "id": "travel.delete_car",
-      "name": "travel.delete_car",
+      "id": "travel_delete_car",
+      "name": "travel_delete_car",
       "description": "Delete car in travel.",
       "tags": [
         "travel",
@@ -11749,8 +11749,8 @@
       }
     },
     {
-      "id": "travel.list_car",
-      "name": "travel.list_car",
+      "id": "travel_list_car",
+      "name": "travel_list_car",
       "description": "List car in travel.",
       "tags": [
         "travel",
@@ -11783,8 +11783,8 @@
       }
     },
     {
-      "id": "travel.create_itinerary",
-      "name": "travel.create_itinerary",
+      "id": "travel_create_itinerary",
+      "name": "travel_create_itinerary",
       "description": "Create itinerary in travel.",
       "tags": [
         "travel",
@@ -11820,8 +11820,8 @@
       }
     },
     {
-      "id": "travel.get_itinerary",
-      "name": "travel.get_itinerary",
+      "id": "travel_get_itinerary",
+      "name": "travel_get_itinerary",
       "description": "Get itinerary in travel.",
       "tags": [
         "travel",
@@ -11857,8 +11857,8 @@
       }
     },
     {
-      "id": "travel.update_itinerary",
-      "name": "travel.update_itinerary",
+      "id": "travel_update_itinerary",
+      "name": "travel_update_itinerary",
       "description": "Update itinerary in travel.",
       "tags": [
         "travel",
@@ -11899,8 +11899,8 @@
       }
     },
     {
-      "id": "travel.delete_itinerary",
-      "name": "travel.delete_itinerary",
+      "id": "travel_delete_itinerary",
+      "name": "travel_delete_itinerary",
       "description": "Delete itinerary in travel.",
       "tags": [
         "travel",
@@ -11936,8 +11936,8 @@
       }
     },
     {
-      "id": "travel.list_itinerary",
-      "name": "travel.list_itinerary",
+      "id": "travel_list_itinerary",
+      "name": "travel_list_itinerary",
       "description": "List itinerary in travel.",
       "tags": [
         "travel",
@@ -11970,8 +11970,8 @@
       }
     },
     {
-      "id": "travel.create_booking",
-      "name": "travel.create_booking",
+      "id": "travel_create_booking",
+      "name": "travel_create_booking",
       "description": "Create booking in travel.",
       "tags": [
         "travel",
@@ -12007,8 +12007,8 @@
       }
     },
     {
-      "id": "travel.get_booking",
-      "name": "travel.get_booking",
+      "id": "travel_get_booking",
+      "name": "travel_get_booking",
       "description": "Get booking in travel.",
       "tags": [
         "travel",
@@ -12044,8 +12044,8 @@
       }
     },
     {
-      "id": "travel.update_booking",
-      "name": "travel.update_booking",
+      "id": "travel_update_booking",
+      "name": "travel_update_booking",
       "description": "Update booking in travel.",
       "tags": [
         "travel",
@@ -12086,8 +12086,8 @@
       }
     },
     {
-      "id": "travel.delete_booking",
-      "name": "travel.delete_booking",
+      "id": "travel_delete_booking",
+      "name": "travel_delete_booking",
       "description": "Delete booking in travel.",
       "tags": [
         "travel",
@@ -12123,8 +12123,8 @@
       }
     },
     {
-      "id": "travel.list_booking",
-      "name": "travel.list_booking",
+      "id": "travel_list_booking",
+      "name": "travel_list_booking",
       "description": "List booking in travel.",
       "tags": [
         "travel",
@@ -12157,8 +12157,8 @@
       }
     },
     {
-      "id": "travel.create_seat",
-      "name": "travel.create_seat",
+      "id": "travel_create_seat",
+      "name": "travel_create_seat",
       "description": "Create seat in travel.",
       "tags": [
         "travel",
@@ -12194,8 +12194,8 @@
       }
     },
     {
-      "id": "travel.get_seat",
-      "name": "travel.get_seat",
+      "id": "travel_get_seat",
+      "name": "travel_get_seat",
       "description": "Get seat in travel.",
       "tags": [
         "travel",
@@ -12231,8 +12231,8 @@
       }
     },
     {
-      "id": "travel.update_seat",
-      "name": "travel.update_seat",
+      "id": "travel_update_seat",
+      "name": "travel_update_seat",
       "description": "Update seat in travel.",
       "tags": [
         "travel",
@@ -12273,8 +12273,8 @@
       }
     },
     {
-      "id": "travel.delete_seat",
-      "name": "travel.delete_seat",
+      "id": "travel_delete_seat",
+      "name": "travel_delete_seat",
       "description": "Delete seat in travel.",
       "tags": [
         "travel",
@@ -12310,8 +12310,8 @@
       }
     },
     {
-      "id": "travel.list_seat",
-      "name": "travel.list_seat",
+      "id": "travel_list_seat",
+      "name": "travel_list_seat",
       "description": "List seat in travel.",
       "tags": [
         "travel",
@@ -12344,8 +12344,8 @@
       }
     },
     {
-      "id": "travel.create_passport",
-      "name": "travel.create_passport",
+      "id": "travel_create_passport",
+      "name": "travel_create_passport",
       "description": "Create passport in travel.",
       "tags": [
         "travel",
@@ -12381,8 +12381,8 @@
       }
     },
     {
-      "id": "travel.get_passport",
-      "name": "travel.get_passport",
+      "id": "travel_get_passport",
+      "name": "travel_get_passport",
       "description": "Get passport in travel.",
       "tags": [
         "travel",
@@ -12418,8 +12418,8 @@
       }
     },
     {
-      "id": "travel.update_passport",
-      "name": "travel.update_passport",
+      "id": "travel_update_passport",
+      "name": "travel_update_passport",
       "description": "Update passport in travel.",
       "tags": [
         "travel",
@@ -12460,8 +12460,8 @@
       }
     },
     {
-      "id": "travel.delete_passport",
-      "name": "travel.delete_passport",
+      "id": "travel_delete_passport",
+      "name": "travel_delete_passport",
       "description": "Delete passport in travel.",
       "tags": [
         "travel",
@@ -12497,8 +12497,8 @@
       }
     },
     {
-      "id": "travel.list_passport",
-      "name": "travel.list_passport",
+      "id": "travel_list_passport",
+      "name": "travel_list_passport",
       "description": "List passport in travel.",
       "tags": [
         "travel",
@@ -12531,8 +12531,8 @@
       }
     },
     {
-      "id": "travel.create_visa",
-      "name": "travel.create_visa",
+      "id": "travel_create_visa",
+      "name": "travel_create_visa",
       "description": "Create visa in travel.",
       "tags": [
         "travel",
@@ -12568,8 +12568,8 @@
       }
     },
     {
-      "id": "travel.get_visa",
-      "name": "travel.get_visa",
+      "id": "travel_get_visa",
+      "name": "travel_get_visa",
       "description": "Get visa in travel.",
       "tags": [
         "travel",
@@ -12605,8 +12605,8 @@
       }
     },
     {
-      "id": "travel.update_visa",
-      "name": "travel.update_visa",
+      "id": "travel_update_visa",
+      "name": "travel_update_visa",
       "description": "Update visa in travel.",
       "tags": [
         "travel",
@@ -12647,8 +12647,8 @@
       }
     },
     {
-      "id": "travel.delete_visa",
-      "name": "travel.delete_visa",
+      "id": "travel_delete_visa",
+      "name": "travel_delete_visa",
       "description": "Delete visa in travel.",
       "tags": [
         "travel",
@@ -12684,8 +12684,8 @@
       }
     },
     {
-      "id": "travel.list_visa",
-      "name": "travel.list_visa",
+      "id": "travel_list_visa",
+      "name": "travel_list_visa",
       "description": "List visa in travel.",
       "tags": [
         "travel",
@@ -12718,8 +12718,8 @@
       }
     },
     {
-      "id": "travel.create_baggage",
-      "name": "travel.create_baggage",
+      "id": "travel_create_baggage",
+      "name": "travel_create_baggage",
       "description": "Create baggage in travel.",
       "tags": [
         "travel",
@@ -12755,8 +12755,8 @@
       }
     },
     {
-      "id": "travel.get_baggage",
-      "name": "travel.get_baggage",
+      "id": "travel_get_baggage",
+      "name": "travel_get_baggage",
       "description": "Get baggage in travel.",
       "tags": [
         "travel",
@@ -12792,8 +12792,8 @@
       }
     },
     {
-      "id": "travel.update_baggage",
-      "name": "travel.update_baggage",
+      "id": "travel_update_baggage",
+      "name": "travel_update_baggage",
       "description": "Update baggage in travel.",
       "tags": [
         "travel",
@@ -12834,8 +12834,8 @@
       }
     },
     {
-      "id": "travel.delete_baggage",
-      "name": "travel.delete_baggage",
+      "id": "travel_delete_baggage",
+      "name": "travel_delete_baggage",
       "description": "Delete baggage in travel.",
       "tags": [
         "travel",
@@ -12871,8 +12871,8 @@
       }
     },
     {
-      "id": "travel.list_baggage",
-      "name": "travel.list_baggage",
+      "id": "travel_list_baggage",
+      "name": "travel_list_baggage",
       "description": "List baggage in travel.",
       "tags": [
         "travel",
@@ -12905,8 +12905,8 @@
       }
     },
     {
-      "id": "travel.create_trip",
-      "name": "travel.create_trip",
+      "id": "travel_create_trip",
+      "name": "travel_create_trip",
       "description": "Create trip in travel.",
       "tags": [
         "travel",
@@ -12942,8 +12942,8 @@
       }
     },
     {
-      "id": "travel.get_trip",
-      "name": "travel.get_trip",
+      "id": "travel_get_trip",
+      "name": "travel_get_trip",
       "description": "Get trip in travel.",
       "tags": [
         "travel",
@@ -12979,8 +12979,8 @@
       }
     },
     {
-      "id": "travel.update_trip",
-      "name": "travel.update_trip",
+      "id": "travel_update_trip",
+      "name": "travel_update_trip",
       "description": "Update trip in travel.",
       "tags": [
         "travel",
@@ -13021,8 +13021,8 @@
       }
     },
     {
-      "id": "travel.delete_trip",
-      "name": "travel.delete_trip",
+      "id": "travel_delete_trip",
+      "name": "travel_delete_trip",
       "description": "Delete trip in travel.",
       "tags": [
         "travel",
@@ -13058,8 +13058,8 @@
       }
     },
     {
-      "id": "travel.list_trip",
-      "name": "travel.list_trip",
+      "id": "travel_list_trip",
+      "name": "travel_list_trip",
       "description": "List trip in travel.",
       "tags": [
         "travel",
@@ -13092,8 +13092,8 @@
       }
     },
     {
-      "id": "weather.create_forecast",
-      "name": "weather.create_forecast",
+      "id": "weather_create_forecast",
+      "name": "weather_create_forecast",
       "description": "Create forecast in weather.",
       "tags": [
         "weather",
@@ -13129,8 +13129,8 @@
       }
     },
     {
-      "id": "weather.get_forecast",
-      "name": "weather.get_forecast",
+      "id": "weather_get_forecast",
+      "name": "weather_get_forecast",
       "description": "Get forecast in weather.",
       "tags": [
         "weather",
@@ -13166,8 +13166,8 @@
       }
     },
     {
-      "id": "weather.update_forecast",
-      "name": "weather.update_forecast",
+      "id": "weather_update_forecast",
+      "name": "weather_update_forecast",
       "description": "Update forecast in weather.",
       "tags": [
         "weather",
@@ -13208,8 +13208,8 @@
       }
     },
     {
-      "id": "weather.delete_forecast",
-      "name": "weather.delete_forecast",
+      "id": "weather_delete_forecast",
+      "name": "weather_delete_forecast",
       "description": "Delete forecast in weather.",
       "tags": [
         "weather",
@@ -13245,8 +13245,8 @@
       }
     },
     {
-      "id": "weather.list_forecast",
-      "name": "weather.list_forecast",
+      "id": "weather_list_forecast",
+      "name": "weather_list_forecast",
       "description": "List forecast in weather.",
       "tags": [
         "weather",
@@ -13279,8 +13279,8 @@
       }
     },
     {
-      "id": "weather.create_alert",
-      "name": "weather.create_alert",
+      "id": "weather_create_alert",
+      "name": "weather_create_alert",
       "description": "Create alert in weather.",
       "tags": [
         "weather",
@@ -13316,8 +13316,8 @@
       }
     },
     {
-      "id": "weather.get_alert",
-      "name": "weather.get_alert",
+      "id": "weather_get_alert",
+      "name": "weather_get_alert",
       "description": "Get alert in weather.",
       "tags": [
         "weather",
@@ -13353,8 +13353,8 @@
       }
     },
     {
-      "id": "weather.update_alert",
-      "name": "weather.update_alert",
+      "id": "weather_update_alert",
+      "name": "weather_update_alert",
       "description": "Update alert in weather.",
       "tags": [
         "weather",
@@ -13395,8 +13395,8 @@
       }
     },
     {
-      "id": "weather.delete_alert",
-      "name": "weather.delete_alert",
+      "id": "weather_delete_alert",
+      "name": "weather_delete_alert",
       "description": "Delete alert in weather.",
       "tags": [
         "weather",
@@ -13432,8 +13432,8 @@
       }
     },
     {
-      "id": "weather.list_alert",
-      "name": "weather.list_alert",
+      "id": "weather_list_alert",
+      "name": "weather_list_alert",
       "description": "List alert in weather.",
       "tags": [
         "weather",
@@ -13466,8 +13466,8 @@
       }
     },
     {
-      "id": "weather.create_temperature",
-      "name": "weather.create_temperature",
+      "id": "weather_create_temperature",
+      "name": "weather_create_temperature",
       "description": "Create temperature in weather.",
       "tags": [
         "weather",
@@ -13503,8 +13503,8 @@
       }
     },
     {
-      "id": "weather.get_temperature",
-      "name": "weather.get_temperature",
+      "id": "weather_get_temperature",
+      "name": "weather_get_temperature",
       "description": "Get temperature in weather.",
       "tags": [
         "weather",
@@ -13540,8 +13540,8 @@
       }
     },
     {
-      "id": "weather.update_temperature",
-      "name": "weather.update_temperature",
+      "id": "weather_update_temperature",
+      "name": "weather_update_temperature",
       "description": "Update temperature in weather.",
       "tags": [
         "weather",
@@ -13582,8 +13582,8 @@
       }
     },
     {
-      "id": "weather.delete_temperature",
-      "name": "weather.delete_temperature",
+      "id": "weather_delete_temperature",
+      "name": "weather_delete_temperature",
       "description": "Delete temperature in weather.",
       "tags": [
         "weather",
@@ -13619,8 +13619,8 @@
       }
     },
     {
-      "id": "weather.list_temperature",
-      "name": "weather.list_temperature",
+      "id": "weather_list_temperature",
+      "name": "weather_list_temperature",
       "description": "List temperature in weather.",
       "tags": [
         "weather",
@@ -13653,8 +13653,8 @@
       }
     },
     {
-      "id": "weather.create_radar",
-      "name": "weather.create_radar",
+      "id": "weather_create_radar",
+      "name": "weather_create_radar",
       "description": "Create radar in weather.",
       "tags": [
         "weather",
@@ -13690,8 +13690,8 @@
       }
     },
     {
-      "id": "weather.get_radar",
-      "name": "weather.get_radar",
+      "id": "weather_get_radar",
+      "name": "weather_get_radar",
       "description": "Get radar in weather.",
       "tags": [
         "weather",
@@ -13727,8 +13727,8 @@
       }
     },
     {
-      "id": "weather.update_radar",
-      "name": "weather.update_radar",
+      "id": "weather_update_radar",
+      "name": "weather_update_radar",
       "description": "Update radar in weather.",
       "tags": [
         "weather",
@@ -13769,8 +13769,8 @@
       }
     },
     {
-      "id": "weather.delete_radar",
-      "name": "weather.delete_radar",
+      "id": "weather_delete_radar",
+      "name": "weather_delete_radar",
       "description": "Delete radar in weather.",
       "tags": [
         "weather",
@@ -13806,8 +13806,8 @@
       }
     },
     {
-      "id": "weather.list_radar",
-      "name": "weather.list_radar",
+      "id": "weather_list_radar",
+      "name": "weather_list_radar",
       "description": "List radar in weather.",
       "tags": [
         "weather",
@@ -13840,8 +13840,8 @@
       }
     },
     {
-      "id": "weather.create_humidity",
-      "name": "weather.create_humidity",
+      "id": "weather_create_humidity",
+      "name": "weather_create_humidity",
       "description": "Create humidity in weather.",
       "tags": [
         "weather",
@@ -13877,8 +13877,8 @@
       }
     },
     {
-      "id": "weather.get_humidity",
-      "name": "weather.get_humidity",
+      "id": "weather_get_humidity",
+      "name": "weather_get_humidity",
       "description": "Get humidity in weather.",
       "tags": [
         "weather",
@@ -13914,8 +13914,8 @@
       }
     },
     {
-      "id": "weather.update_humidity",
-      "name": "weather.update_humidity",
+      "id": "weather_update_humidity",
+      "name": "weather_update_humidity",
       "description": "Update humidity in weather.",
       "tags": [
         "weather",
@@ -13956,8 +13956,8 @@
       }
     },
     {
-      "id": "weather.delete_humidity",
-      "name": "weather.delete_humidity",
+      "id": "weather_delete_humidity",
+      "name": "weather_delete_humidity",
       "description": "Delete humidity in weather.",
       "tags": [
         "weather",
@@ -13993,8 +13993,8 @@
       }
     },
     {
-      "id": "weather.list_humidity",
-      "name": "weather.list_humidity",
+      "id": "weather_list_humidity",
+      "name": "weather_list_humidity",
       "description": "List humidity in weather.",
       "tags": [
         "weather",
@@ -14027,8 +14027,8 @@
       }
     },
     {
-      "id": "weather.create_wind",
-      "name": "weather.create_wind",
+      "id": "weather_create_wind",
+      "name": "weather_create_wind",
       "description": "Create wind in weather.",
       "tags": [
         "weather",
@@ -14064,8 +14064,8 @@
       }
     },
     {
-      "id": "weather.get_wind",
-      "name": "weather.get_wind",
+      "id": "weather_get_wind",
+      "name": "weather_get_wind",
       "description": "Get wind in weather.",
       "tags": [
         "weather",
@@ -14101,8 +14101,8 @@
       }
     },
     {
-      "id": "weather.update_wind",
-      "name": "weather.update_wind",
+      "id": "weather_update_wind",
+      "name": "weather_update_wind",
       "description": "Update wind in weather.",
       "tags": [
         "weather",
@@ -14143,8 +14143,8 @@
       }
     },
     {
-      "id": "weather.delete_wind",
-      "name": "weather.delete_wind",
+      "id": "weather_delete_wind",
+      "name": "weather_delete_wind",
       "description": "Delete wind in weather.",
       "tags": [
         "weather",
@@ -14180,8 +14180,8 @@
       }
     },
     {
-      "id": "weather.list_wind",
-      "name": "weather.list_wind",
+      "id": "weather_list_wind",
+      "name": "weather_list_wind",
       "description": "List wind in weather.",
       "tags": [
         "weather",
@@ -14214,8 +14214,8 @@
       }
     },
     {
-      "id": "weather.create_precipitation",
-      "name": "weather.create_precipitation",
+      "id": "weather_create_precipitation",
+      "name": "weather_create_precipitation",
       "description": "Create precipitation in weather.",
       "tags": [
         "weather",
@@ -14251,8 +14251,8 @@
       }
     },
     {
-      "id": "weather.get_precipitation",
-      "name": "weather.get_precipitation",
+      "id": "weather_get_precipitation",
+      "name": "weather_get_precipitation",
       "description": "Get precipitation in weather.",
       "tags": [
         "weather",
@@ -14288,8 +14288,8 @@
       }
     },
     {
-      "id": "weather.update_precipitation",
-      "name": "weather.update_precipitation",
+      "id": "weather_update_precipitation",
+      "name": "weather_update_precipitation",
       "description": "Update precipitation in weather.",
       "tags": [
         "weather",
@@ -14330,8 +14330,8 @@
       }
     },
     {
-      "id": "weather.delete_precipitation",
-      "name": "weather.delete_precipitation",
+      "id": "weather_delete_precipitation",
+      "name": "weather_delete_precipitation",
       "description": "Delete precipitation in weather.",
       "tags": [
         "weather",
@@ -14367,8 +14367,8 @@
       }
     },
     {
-      "id": "weather.list_precipitation",
-      "name": "weather.list_precipitation",
+      "id": "weather_list_precipitation",
+      "name": "weather_list_precipitation",
       "description": "List precipitation in weather.",
       "tags": [
         "weather",
@@ -14401,8 +14401,8 @@
       }
     },
     {
-      "id": "weather.create_uv_index",
-      "name": "weather.create_uv_index",
+      "id": "weather_create_uv_index",
+      "name": "weather_create_uv_index",
       "description": "Create uv index in weather.",
       "tags": [
         "weather",
@@ -14438,8 +14438,8 @@
       }
     },
     {
-      "id": "weather.get_uv_index",
-      "name": "weather.get_uv_index",
+      "id": "weather_get_uv_index",
+      "name": "weather_get_uv_index",
       "description": "Get uv index in weather.",
       "tags": [
         "weather",
@@ -14475,8 +14475,8 @@
       }
     },
     {
-      "id": "weather.update_uv_index",
-      "name": "weather.update_uv_index",
+      "id": "weather_update_uv_index",
+      "name": "weather_update_uv_index",
       "description": "Update uv index in weather.",
       "tags": [
         "weather",
@@ -14517,8 +14517,8 @@
       }
     },
     {
-      "id": "weather.delete_uv_index",
-      "name": "weather.delete_uv_index",
+      "id": "weather_delete_uv_index",
+      "name": "weather_delete_uv_index",
       "description": "Delete uv index in weather.",
       "tags": [
         "weather",
@@ -14554,8 +14554,8 @@
       }
     },
     {
-      "id": "weather.list_uv_index",
-      "name": "weather.list_uv_index",
+      "id": "weather_list_uv_index",
+      "name": "weather_list_uv_index",
       "description": "List uv index in weather.",
       "tags": [
         "weather",
@@ -14588,8 +14588,8 @@
       }
     },
     {
-      "id": "weather.create_air_quality",
-      "name": "weather.create_air_quality",
+      "id": "weather_create_air_quality",
+      "name": "weather_create_air_quality",
       "description": "Create air quality in weather.",
       "tags": [
         "weather",
@@ -14625,8 +14625,8 @@
       }
     },
     {
-      "id": "weather.get_air_quality",
-      "name": "weather.get_air_quality",
+      "id": "weather_get_air_quality",
+      "name": "weather_get_air_quality",
       "description": "Get air quality in weather.",
       "tags": [
         "weather",
@@ -14662,8 +14662,8 @@
       }
     },
     {
-      "id": "weather.update_air_quality",
-      "name": "weather.update_air_quality",
+      "id": "weather_update_air_quality",
+      "name": "weather_update_air_quality",
       "description": "Update air quality in weather.",
       "tags": [
         "weather",
@@ -14704,8 +14704,8 @@
       }
     },
     {
-      "id": "weather.delete_air_quality",
-      "name": "weather.delete_air_quality",
+      "id": "weather_delete_air_quality",
+      "name": "weather_delete_air_quality",
       "description": "Delete air quality in weather.",
       "tags": [
         "weather",
@@ -14741,8 +14741,8 @@
       }
     },
     {
-      "id": "weather.list_air_quality",
-      "name": "weather.list_air_quality",
+      "id": "weather_list_air_quality",
+      "name": "weather_list_air_quality",
       "description": "List air quality in weather.",
       "tags": [
         "weather",
@@ -14775,8 +14775,8 @@
       }
     },
     {
-      "id": "weather.create_sunrise",
-      "name": "weather.create_sunrise",
+      "id": "weather_create_sunrise",
+      "name": "weather_create_sunrise",
       "description": "Create sunrise in weather.",
       "tags": [
         "weather",
@@ -14812,8 +14812,8 @@
       }
     },
     {
-      "id": "weather.get_sunrise",
-      "name": "weather.get_sunrise",
+      "id": "weather_get_sunrise",
+      "name": "weather_get_sunrise",
       "description": "Get sunrise in weather.",
       "tags": [
         "weather",
@@ -14849,8 +14849,8 @@
       }
     },
     {
-      "id": "weather.update_sunrise",
-      "name": "weather.update_sunrise",
+      "id": "weather_update_sunrise",
+      "name": "weather_update_sunrise",
       "description": "Update sunrise in weather.",
       "tags": [
         "weather",
@@ -14891,8 +14891,8 @@
       }
     },
     {
-      "id": "weather.delete_sunrise",
-      "name": "weather.delete_sunrise",
+      "id": "weather_delete_sunrise",
+      "name": "weather_delete_sunrise",
       "description": "Delete sunrise in weather.",
       "tags": [
         "weather",
@@ -14928,8 +14928,8 @@
       }
     },
     {
-      "id": "weather.list_sunrise",
-      "name": "weather.list_sunrise",
+      "id": "weather_list_sunrise",
+      "name": "weather_list_sunrise",
       "description": "List sunrise in weather.",
       "tags": [
         "weather",
@@ -14962,8 +14962,8 @@
       }
     },
     {
-      "id": "payments.create_invoice",
-      "name": "payments.create_invoice",
+      "id": "payments_create_invoice",
+      "name": "payments_create_invoice",
       "description": "Create invoice in payments.",
       "tags": [
         "payments",
@@ -14999,8 +14999,8 @@
       }
     },
     {
-      "id": "payments.get_invoice",
-      "name": "payments.get_invoice",
+      "id": "payments_get_invoice",
+      "name": "payments_get_invoice",
       "description": "Get invoice in payments.",
       "tags": [
         "payments",
@@ -15036,8 +15036,8 @@
       }
     },
     {
-      "id": "payments.update_invoice",
-      "name": "payments.update_invoice",
+      "id": "payments_update_invoice",
+      "name": "payments_update_invoice",
       "description": "Update invoice in payments.",
       "tags": [
         "payments",
@@ -15078,8 +15078,8 @@
       }
     },
     {
-      "id": "payments.delete_invoice",
-      "name": "payments.delete_invoice",
+      "id": "payments_delete_invoice",
+      "name": "payments_delete_invoice",
       "description": "Delete invoice in payments.",
       "tags": [
         "payments",
@@ -15115,8 +15115,8 @@
       }
     },
     {
-      "id": "payments.list_invoice",
-      "name": "payments.list_invoice",
+      "id": "payments_list_invoice",
+      "name": "payments_list_invoice",
       "description": "List invoice in payments.",
       "tags": [
         "payments",
@@ -15149,8 +15149,8 @@
       }
     },
     {
-      "id": "payments.create_payment",
-      "name": "payments.create_payment",
+      "id": "payments_create_payment",
+      "name": "payments_create_payment",
       "description": "Create payment in payments.",
       "tags": [
         "payments",
@@ -15186,8 +15186,8 @@
       }
     },
     {
-      "id": "payments.get_payment",
-      "name": "payments.get_payment",
+      "id": "payments_get_payment",
+      "name": "payments_get_payment",
       "description": "Get payment in payments.",
       "tags": [
         "payments",
@@ -15223,8 +15223,8 @@
       }
     },
     {
-      "id": "payments.update_payment",
-      "name": "payments.update_payment",
+      "id": "payments_update_payment",
+      "name": "payments_update_payment",
       "description": "Update payment in payments.",
       "tags": [
         "payments",
@@ -15265,8 +15265,8 @@
       }
     },
     {
-      "id": "payments.delete_payment",
-      "name": "payments.delete_payment",
+      "id": "payments_delete_payment",
+      "name": "payments_delete_payment",
       "description": "Delete payment in payments.",
       "tags": [
         "payments",
@@ -15302,8 +15302,8 @@
       }
     },
     {
-      "id": "payments.list_payment",
-      "name": "payments.list_payment",
+      "id": "payments_list_payment",
+      "name": "payments_list_payment",
       "description": "List payment in payments.",
       "tags": [
         "payments",
@@ -15336,8 +15336,8 @@
       }
     },
     {
-      "id": "payments.create_refund",
-      "name": "payments.create_refund",
+      "id": "payments_create_refund",
+      "name": "payments_create_refund",
       "description": "Create refund in payments.",
       "tags": [
         "payments",
@@ -15373,8 +15373,8 @@
       }
     },
     {
-      "id": "payments.get_refund",
-      "name": "payments.get_refund",
+      "id": "payments_get_refund",
+      "name": "payments_get_refund",
       "description": "Get refund in payments.",
       "tags": [
         "payments",
@@ -15410,8 +15410,8 @@
       }
     },
     {
-      "id": "payments.update_refund",
-      "name": "payments.update_refund",
+      "id": "payments_update_refund",
+      "name": "payments_update_refund",
       "description": "Update refund in payments.",
       "tags": [
         "payments",
@@ -15452,8 +15452,8 @@
       }
     },
     {
-      "id": "payments.delete_refund",
-      "name": "payments.delete_refund",
+      "id": "payments_delete_refund",
+      "name": "payments_delete_refund",
       "description": "Delete refund in payments.",
       "tags": [
         "payments",
@@ -15489,8 +15489,8 @@
       }
     },
     {
-      "id": "payments.list_refund",
-      "name": "payments.list_refund",
+      "id": "payments_list_refund",
+      "name": "payments_list_refund",
       "description": "List refund in payments.",
       "tags": [
         "payments",
@@ -15523,8 +15523,8 @@
       }
     },
     {
-      "id": "payments.create_charge",
-      "name": "payments.create_charge",
+      "id": "payments_create_charge",
+      "name": "payments_create_charge",
       "description": "Create charge in payments.",
       "tags": [
         "payments",
@@ -15560,8 +15560,8 @@
       }
     },
     {
-      "id": "payments.get_charge",
-      "name": "payments.get_charge",
+      "id": "payments_get_charge",
+      "name": "payments_get_charge",
       "description": "Get charge in payments.",
       "tags": [
         "payments",
@@ -15597,8 +15597,8 @@
       }
     },
     {
-      "id": "payments.update_charge",
-      "name": "payments.update_charge",
+      "id": "payments_update_charge",
+      "name": "payments_update_charge",
       "description": "Update charge in payments.",
       "tags": [
         "payments",
@@ -15639,8 +15639,8 @@
       }
     },
     {
-      "id": "payments.delete_charge",
-      "name": "payments.delete_charge",
+      "id": "payments_delete_charge",
+      "name": "payments_delete_charge",
       "description": "Delete charge in payments.",
       "tags": [
         "payments",
@@ -15676,8 +15676,8 @@
       }
     },
     {
-      "id": "payments.list_charge",
-      "name": "payments.list_charge",
+      "id": "payments_list_charge",
+      "name": "payments_list_charge",
       "description": "List charge in payments.",
       "tags": [
         "payments",
@@ -15710,8 +15710,8 @@
       }
     },
     {
-      "id": "payments.create_subscription",
-      "name": "payments.create_subscription",
+      "id": "payments_create_subscription",
+      "name": "payments_create_subscription",
       "description": "Create subscription in payments.",
       "tags": [
         "payments",
@@ -15747,8 +15747,8 @@
       }
     },
     {
-      "id": "payments.get_subscription",
-      "name": "payments.get_subscription",
+      "id": "payments_get_subscription",
+      "name": "payments_get_subscription",
       "description": "Get subscription in payments.",
       "tags": [
         "payments",
@@ -15784,8 +15784,8 @@
       }
     },
     {
-      "id": "payments.update_subscription",
-      "name": "payments.update_subscription",
+      "id": "payments_update_subscription",
+      "name": "payments_update_subscription",
       "description": "Update subscription in payments.",
       "tags": [
         "payments",
@@ -15826,8 +15826,8 @@
       }
     },
     {
-      "id": "payments.delete_subscription",
-      "name": "payments.delete_subscription",
+      "id": "payments_delete_subscription",
+      "name": "payments_delete_subscription",
       "description": "Delete subscription in payments.",
       "tags": [
         "payments",
@@ -15863,8 +15863,8 @@
       }
     },
     {
-      "id": "payments.list_subscription",
-      "name": "payments.list_subscription",
+      "id": "payments_list_subscription",
+      "name": "payments_list_subscription",
       "description": "List subscription in payments.",
       "tags": [
         "payments",
@@ -15897,8 +15897,8 @@
       }
     },
     {
-      "id": "payments.create_payout",
-      "name": "payments.create_payout",
+      "id": "payments_create_payout",
+      "name": "payments_create_payout",
       "description": "Create payout in payments.",
       "tags": [
         "payments",
@@ -15934,8 +15934,8 @@
       }
     },
     {
-      "id": "payments.get_payout",
-      "name": "payments.get_payout",
+      "id": "payments_get_payout",
+      "name": "payments_get_payout",
       "description": "Get payout in payments.",
       "tags": [
         "payments",
@@ -15971,8 +15971,8 @@
       }
     },
     {
-      "id": "payments.update_payout",
-      "name": "payments.update_payout",
+      "id": "payments_update_payout",
+      "name": "payments_update_payout",
       "description": "Update payout in payments.",
       "tags": [
         "payments",
@@ -16013,8 +16013,8 @@
       }
     },
     {
-      "id": "payments.delete_payout",
-      "name": "payments.delete_payout",
+      "id": "payments_delete_payout",
+      "name": "payments_delete_payout",
       "description": "Delete payout in payments.",
       "tags": [
         "payments",
@@ -16050,8 +16050,8 @@
       }
     },
     {
-      "id": "payments.list_payout",
-      "name": "payments.list_payout",
+      "id": "payments_list_payout",
+      "name": "payments_list_payout",
       "description": "List payout in payments.",
       "tags": [
         "payments",
@@ -16084,8 +16084,8 @@
       }
     },
     {
-      "id": "payments.create_receipt",
-      "name": "payments.create_receipt",
+      "id": "payments_create_receipt",
+      "name": "payments_create_receipt",
       "description": "Create receipt in payments.",
       "tags": [
         "payments",
@@ -16121,8 +16121,8 @@
       }
     },
     {
-      "id": "payments.get_receipt",
-      "name": "payments.get_receipt",
+      "id": "payments_get_receipt",
+      "name": "payments_get_receipt",
       "description": "Get receipt in payments.",
       "tags": [
         "payments",
@@ -16158,8 +16158,8 @@
       }
     },
     {
-      "id": "payments.update_receipt",
-      "name": "payments.update_receipt",
+      "id": "payments_update_receipt",
+      "name": "payments_update_receipt",
       "description": "Update receipt in payments.",
       "tags": [
         "payments",
@@ -16200,8 +16200,8 @@
       }
     },
     {
-      "id": "payments.delete_receipt",
-      "name": "payments.delete_receipt",
+      "id": "payments_delete_receipt",
+      "name": "payments_delete_receipt",
       "description": "Delete receipt in payments.",
       "tags": [
         "payments",
@@ -16237,8 +16237,8 @@
       }
     },
     {
-      "id": "payments.list_receipt",
-      "name": "payments.list_receipt",
+      "id": "payments_list_receipt",
+      "name": "payments_list_receipt",
       "description": "List receipt in payments.",
       "tags": [
         "payments",
@@ -16271,8 +16271,8 @@
       }
     },
     {
-      "id": "payments.create_tax",
-      "name": "payments.create_tax",
+      "id": "payments_create_tax",
+      "name": "payments_create_tax",
       "description": "Create tax in payments.",
       "tags": [
         "payments",
@@ -16308,8 +16308,8 @@
       }
     },
     {
-      "id": "payments.get_tax",
-      "name": "payments.get_tax",
+      "id": "payments_get_tax",
+      "name": "payments_get_tax",
       "description": "Get tax in payments.",
       "tags": [
         "payments",
@@ -16345,8 +16345,8 @@
       }
     },
     {
-      "id": "payments.update_tax",
-      "name": "payments.update_tax",
+      "id": "payments_update_tax",
+      "name": "payments_update_tax",
       "description": "Update tax in payments.",
       "tags": [
         "payments",
@@ -16387,8 +16387,8 @@
       }
     },
     {
-      "id": "payments.delete_tax",
-      "name": "payments.delete_tax",
+      "id": "payments_delete_tax",
+      "name": "payments_delete_tax",
       "description": "Delete tax in payments.",
       "tags": [
         "payments",
@@ -16424,8 +16424,8 @@
       }
     },
     {
-      "id": "payments.list_tax",
-      "name": "payments.list_tax",
+      "id": "payments_list_tax",
+      "name": "payments_list_tax",
       "description": "List tax in payments.",
       "tags": [
         "payments",
@@ -16458,8 +16458,8 @@
       }
     },
     {
-      "id": "payments.create_discount",
-      "name": "payments.create_discount",
+      "id": "payments_create_discount",
+      "name": "payments_create_discount",
       "description": "Create discount in payments.",
       "tags": [
         "payments",
@@ -16495,8 +16495,8 @@
       }
     },
     {
-      "id": "payments.get_discount",
-      "name": "payments.get_discount",
+      "id": "payments_get_discount",
+      "name": "payments_get_discount",
       "description": "Get discount in payments.",
       "tags": [
         "payments",
@@ -16532,8 +16532,8 @@
       }
     },
     {
-      "id": "payments.update_discount",
-      "name": "payments.update_discount",
+      "id": "payments_update_discount",
+      "name": "payments_update_discount",
       "description": "Update discount in payments.",
       "tags": [
         "payments",
@@ -16574,8 +16574,8 @@
       }
     },
     {
-      "id": "payments.delete_discount",
-      "name": "payments.delete_discount",
+      "id": "payments_delete_discount",
+      "name": "payments_delete_discount",
       "description": "Delete discount in payments.",
       "tags": [
         "payments",
@@ -16611,8 +16611,8 @@
       }
     },
     {
-      "id": "payments.list_discount",
-      "name": "payments.list_discount",
+      "id": "payments_list_discount",
+      "name": "payments_list_discount",
       "description": "List discount in payments.",
       "tags": [
         "payments",
@@ -16645,8 +16645,8 @@
       }
     },
     {
-      "id": "payments.create_method",
-      "name": "payments.create_method",
+      "id": "payments_create_method",
+      "name": "payments_create_method",
       "description": "Create method in payments.",
       "tags": [
         "payments",
@@ -16682,8 +16682,8 @@
       }
     },
     {
-      "id": "payments.get_method",
-      "name": "payments.get_method",
+      "id": "payments_get_method",
+      "name": "payments_get_method",
       "description": "Get method in payments.",
       "tags": [
         "payments",
@@ -16719,8 +16719,8 @@
       }
     },
     {
-      "id": "payments.update_method",
-      "name": "payments.update_method",
+      "id": "payments_update_method",
+      "name": "payments_update_method",
       "description": "Update method in payments.",
       "tags": [
         "payments",
@@ -16761,8 +16761,8 @@
       }
     },
     {
-      "id": "payments.delete_method",
-      "name": "payments.delete_method",
+      "id": "payments_delete_method",
+      "name": "payments_delete_method",
       "description": "Delete method in payments.",
       "tags": [
         "payments",
@@ -16798,8 +16798,8 @@
       }
     },
     {
-      "id": "payments.list_method",
-      "name": "payments.list_method",
+      "id": "payments_list_method",
+      "name": "payments_list_method",
       "description": "List method in payments.",
       "tags": [
         "payments",
@@ -16832,8 +16832,8 @@
       }
     },
     {
-      "id": "device.create_device",
-      "name": "device.create_device",
+      "id": "device_create_device",
+      "name": "device_create_device",
       "description": "Create device in device.",
       "tags": [
         "device",
@@ -16869,8 +16869,8 @@
       }
     },
     {
-      "id": "device.get_device",
-      "name": "device.get_device",
+      "id": "device_get_device",
+      "name": "device_get_device",
       "description": "Get device in device.",
       "tags": [
         "device",
@@ -16906,8 +16906,8 @@
       }
     },
     {
-      "id": "device.update_device",
-      "name": "device.update_device",
+      "id": "device_update_device",
+      "name": "device_update_device",
       "description": "Update device in device.",
       "tags": [
         "device",
@@ -16948,8 +16948,8 @@
       }
     },
     {
-      "id": "device.delete_device",
-      "name": "device.delete_device",
+      "id": "device_delete_device",
+      "name": "device_delete_device",
       "description": "Delete device in device.",
       "tags": [
         "device",
@@ -16985,8 +16985,8 @@
       }
     },
     {
-      "id": "device.list_device",
-      "name": "device.list_device",
+      "id": "device_list_device",
+      "name": "device_list_device",
       "description": "List device in device.",
       "tags": [
         "device",
@@ -17019,8 +17019,8 @@
       }
     },
     {
-      "id": "device.create_volume",
-      "name": "device.create_volume",
+      "id": "device_create_volume",
+      "name": "device_create_volume",
       "description": "Create volume in device.",
       "tags": [
         "device",
@@ -17056,8 +17056,8 @@
       }
     },
     {
-      "id": "device.get_volume",
-      "name": "device.get_volume",
+      "id": "device_get_volume",
+      "name": "device_get_volume",
       "description": "Get volume in device.",
       "tags": [
         "device",
@@ -17093,8 +17093,8 @@
       }
     },
     {
-      "id": "device.update_volume",
-      "name": "device.update_volume",
+      "id": "device_update_volume",
+      "name": "device_update_volume",
       "description": "Update volume in device.",
       "tags": [
         "device",
@@ -17135,8 +17135,8 @@
       }
     },
     {
-      "id": "device.delete_volume",
-      "name": "device.delete_volume",
+      "id": "device_delete_volume",
+      "name": "device_delete_volume",
       "description": "Delete volume in device.",
       "tags": [
         "device",
@@ -17172,8 +17172,8 @@
       }
     },
     {
-      "id": "device.list_volume",
-      "name": "device.list_volume",
+      "id": "device_list_volume",
+      "name": "device_list_volume",
       "description": "List volume in device.",
       "tags": [
         "device",
@@ -17206,8 +17206,8 @@
       }
     },
     {
-      "id": "device.create_brightness",
-      "name": "device.create_brightness",
+      "id": "device_create_brightness",
+      "name": "device_create_brightness",
       "description": "Create brightness in device.",
       "tags": [
         "device",
@@ -17243,8 +17243,8 @@
       }
     },
     {
-      "id": "device.get_brightness",
-      "name": "device.get_brightness",
+      "id": "device_get_brightness",
+      "name": "device_get_brightness",
       "description": "Get brightness in device.",
       "tags": [
         "device",
@@ -17280,8 +17280,8 @@
       }
     },
     {
-      "id": "device.update_brightness",
-      "name": "device.update_brightness",
+      "id": "device_update_brightness",
+      "name": "device_update_brightness",
       "description": "Update brightness in device.",
       "tags": [
         "device",
@@ -17322,8 +17322,8 @@
       }
     },
     {
-      "id": "device.delete_brightness",
-      "name": "device.delete_brightness",
+      "id": "device_delete_brightness",
+      "name": "device_delete_brightness",
       "description": "Delete brightness in device.",
       "tags": [
         "device",
@@ -17359,8 +17359,8 @@
       }
     },
     {
-      "id": "device.list_brightness",
-      "name": "device.list_brightness",
+      "id": "device_list_brightness",
+      "name": "device_list_brightness",
       "description": "List brightness in device.",
       "tags": [
         "device",
@@ -17393,8 +17393,8 @@
       }
     },
     {
-      "id": "device.create_wifi",
-      "name": "device.create_wifi",
+      "id": "device_create_wifi",
+      "name": "device_create_wifi",
       "description": "Create wifi in device.",
       "tags": [
         "device",
@@ -17430,8 +17430,8 @@
       }
     },
     {
-      "id": "device.get_wifi",
-      "name": "device.get_wifi",
+      "id": "device_get_wifi",
+      "name": "device_get_wifi",
       "description": "Get wifi in device.",
       "tags": [
         "device",
@@ -17467,8 +17467,8 @@
       }
     },
     {
-      "id": "device.update_wifi",
-      "name": "device.update_wifi",
+      "id": "device_update_wifi",
+      "name": "device_update_wifi",
       "description": "Update wifi in device.",
       "tags": [
         "device",
@@ -17509,8 +17509,8 @@
       }
     },
     {
-      "id": "device.delete_wifi",
-      "name": "device.delete_wifi",
+      "id": "device_delete_wifi",
+      "name": "device_delete_wifi",
       "description": "Delete wifi in device.",
       "tags": [
         "device",
@@ -17546,8 +17546,8 @@
       }
     },
     {
-      "id": "device.list_wifi",
-      "name": "device.list_wifi",
+      "id": "device_list_wifi",
+      "name": "device_list_wifi",
       "description": "List wifi in device.",
       "tags": [
         "device",
@@ -17580,8 +17580,8 @@
       }
     },
     {
-      "id": "device.create_bluetooth",
-      "name": "device.create_bluetooth",
+      "id": "device_create_bluetooth",
+      "name": "device_create_bluetooth",
       "description": "Create bluetooth in device.",
       "tags": [
         "device",
@@ -17617,8 +17617,8 @@
       }
     },
     {
-      "id": "device.get_bluetooth",
-      "name": "device.get_bluetooth",
+      "id": "device_get_bluetooth",
+      "name": "device_get_bluetooth",
       "description": "Get bluetooth in device.",
       "tags": [
         "device",
@@ -17654,8 +17654,8 @@
       }
     },
     {
-      "id": "device.update_bluetooth",
-      "name": "device.update_bluetooth",
+      "id": "device_update_bluetooth",
+      "name": "device_update_bluetooth",
       "description": "Update bluetooth in device.",
       "tags": [
         "device",
@@ -17696,8 +17696,8 @@
       }
     },
     {
-      "id": "device.delete_bluetooth",
-      "name": "device.delete_bluetooth",
+      "id": "device_delete_bluetooth",
+      "name": "device_delete_bluetooth",
       "description": "Delete bluetooth in device.",
       "tags": [
         "device",
@@ -17733,8 +17733,8 @@
       }
     },
     {
-      "id": "device.list_bluetooth",
-      "name": "device.list_bluetooth",
+      "id": "device_list_bluetooth",
+      "name": "device_list_bluetooth",
       "description": "List bluetooth in device.",
       "tags": [
         "device",
@@ -17767,8 +17767,8 @@
       }
     },
     {
-      "id": "device.create_battery",
-      "name": "device.create_battery",
+      "id": "device_create_battery",
+      "name": "device_create_battery",
       "description": "Create battery in device.",
       "tags": [
         "device",
@@ -17804,8 +17804,8 @@
       }
     },
     {
-      "id": "device.get_battery",
-      "name": "device.get_battery",
+      "id": "device_get_battery",
+      "name": "device_get_battery",
       "description": "Get battery in device.",
       "tags": [
         "device",
@@ -17841,8 +17841,8 @@
       }
     },
     {
-      "id": "device.update_battery",
-      "name": "device.update_battery",
+      "id": "device_update_battery",
+      "name": "device_update_battery",
       "description": "Update battery in device.",
       "tags": [
         "device",
@@ -17883,8 +17883,8 @@
       }
     },
     {
-      "id": "device.delete_battery",
-      "name": "device.delete_battery",
+      "id": "device_delete_battery",
+      "name": "device_delete_battery",
       "description": "Delete battery in device.",
       "tags": [
         "device",
@@ -17920,8 +17920,8 @@
       }
     },
     {
-      "id": "device.list_battery",
-      "name": "device.list_battery",
+      "id": "device_list_battery",
+      "name": "device_list_battery",
       "description": "List battery in device.",
       "tags": [
         "device",
@@ -17954,8 +17954,8 @@
       }
     },
     {
-      "id": "device.create_notification",
-      "name": "device.create_notification",
+      "id": "device_create_notification",
+      "name": "device_create_notification",
       "description": "Create notification in device.",
       "tags": [
         "device",
@@ -17991,8 +17991,8 @@
       }
     },
     {
-      "id": "device.get_notification",
-      "name": "device.get_notification",
+      "id": "device_get_notification",
+      "name": "device_get_notification",
       "description": "Get notification in device.",
       "tags": [
         "device",
@@ -18028,8 +18028,8 @@
       }
     },
     {
-      "id": "device.update_notification",
-      "name": "device.update_notification",
+      "id": "device_update_notification",
+      "name": "device_update_notification",
       "description": "Update notification in device.",
       "tags": [
         "device",
@@ -18070,8 +18070,8 @@
       }
     },
     {
-      "id": "device.delete_notification",
-      "name": "device.delete_notification",
+      "id": "device_delete_notification",
+      "name": "device_delete_notification",
       "description": "Delete notification in device.",
       "tags": [
         "device",
@@ -18107,8 +18107,8 @@
       }
     },
     {
-      "id": "device.list_notification",
-      "name": "device.list_notification",
+      "id": "device_list_notification",
+      "name": "device_list_notification",
       "description": "List notification in device.",
       "tags": [
         "device",
@@ -18141,8 +18141,8 @@
       }
     },
     {
-      "id": "device.create_camera",
-      "name": "device.create_camera",
+      "id": "device_create_camera",
+      "name": "device_create_camera",
       "description": "Create camera in device.",
       "tags": [
         "device",
@@ -18178,8 +18178,8 @@
       }
     },
     {
-      "id": "device.get_camera",
-      "name": "device.get_camera",
+      "id": "device_get_camera",
+      "name": "device_get_camera",
       "description": "Get camera in device.",
       "tags": [
         "device",
@@ -18215,8 +18215,8 @@
       }
     },
     {
-      "id": "device.update_camera",
-      "name": "device.update_camera",
+      "id": "device_update_camera",
+      "name": "device_update_camera",
       "description": "Update camera in device.",
       "tags": [
         "device",
@@ -18257,8 +18257,8 @@
       }
     },
     {
-      "id": "device.delete_camera",
-      "name": "device.delete_camera",
+      "id": "device_delete_camera",
+      "name": "device_delete_camera",
       "description": "Delete camera in device.",
       "tags": [
         "device",
@@ -18294,8 +18294,8 @@
       }
     },
     {
-      "id": "device.list_camera",
-      "name": "device.list_camera",
+      "id": "device_list_camera",
+      "name": "device_list_camera",
       "description": "List camera in device.",
       "tags": [
         "device",
@@ -18328,8 +18328,8 @@
       }
     },
     {
-      "id": "device.create_location",
-      "name": "device.create_location",
+      "id": "device_create_location",
+      "name": "device_create_location",
       "description": "Create location in device.",
       "tags": [
         "device",
@@ -18365,8 +18365,8 @@
       }
     },
     {
-      "id": "device.get_location",
-      "name": "device.get_location",
+      "id": "device_get_location",
+      "name": "device_get_location",
       "description": "Get location in device.",
       "tags": [
         "device",
@@ -18402,8 +18402,8 @@
       }
     },
     {
-      "id": "device.update_location",
-      "name": "device.update_location",
+      "id": "device_update_location",
+      "name": "device_update_location",
       "description": "Update location in device.",
       "tags": [
         "device",
@@ -18444,8 +18444,8 @@
       }
     },
     {
-      "id": "device.delete_location",
-      "name": "device.delete_location",
+      "id": "device_delete_location",
+      "name": "device_delete_location",
       "description": "Delete location in device.",
       "tags": [
         "device",
@@ -18481,8 +18481,8 @@
       }
     },
     {
-      "id": "device.list_location",
-      "name": "device.list_location",
+      "id": "device_list_location",
+      "name": "device_list_location",
       "description": "List location in device.",
       "tags": [
         "device",
@@ -18515,8 +18515,8 @@
       }
     },
     {
-      "id": "device.create_app",
-      "name": "device.create_app",
+      "id": "device_create_app",
+      "name": "device_create_app",
       "description": "Create app in device.",
       "tags": [
         "device",
@@ -18552,8 +18552,8 @@
       }
     },
     {
-      "id": "device.get_app",
-      "name": "device.get_app",
+      "id": "device_get_app",
+      "name": "device_get_app",
       "description": "Get app in device.",
       "tags": [
         "device",
@@ -18589,8 +18589,8 @@
       }
     },
     {
-      "id": "device.update_app",
-      "name": "device.update_app",
+      "id": "device_update_app",
+      "name": "device_update_app",
       "description": "Update app in device.",
       "tags": [
         "device",
@@ -18631,8 +18631,8 @@
       }
     },
     {
-      "id": "device.delete_app",
-      "name": "device.delete_app",
+      "id": "device_delete_app",
+      "name": "device_delete_app",
       "description": "Delete app in device.",
       "tags": [
         "device",
@@ -18668,8 +18668,8 @@
       }
     },
     {
-      "id": "device.list_app",
-      "name": "device.list_app",
+      "id": "device_list_app",
+      "name": "device_list_app",
       "description": "List app in device.",
       "tags": [
         "device",
@@ -18698,6 +18698,54 @@
             "description": "Filters for listing app."
           }
         },
+        "additionalProperties": false
+      }
+    },
+    {
+      "id": "email_send_message",
+      "name": "email_send_message",
+      "description": "Send message in email.",
+      "tags": [
+        "email",
+        "message",
+        "send"
+      ],
+      "keywords": [
+        "send",
+        "email",
+        "message",
+        "deliver",
+        "forward",
+        "recipient"
+      ],
+      "examples": [
+        "send email to my friend",
+        "send the message",
+        "email this to alex",
+        "deliver email to recipient",
+        "send my message"
+      ],
+      "parameters": {
+        "type": "object",
+        "properties": {
+          "to": {
+            "type": "string",
+            "description": "Recipient email address."
+          },
+          "subject": {
+            "type": "string",
+            "description": "Email subject line."
+          },
+          "body": {
+            "type": "string",
+            "description": "Email body content."
+          }
+        },
+        "required": [
+          "to",
+          "subject",
+          "body"
+        ],
         "additionalProperties": false
       }
     }
