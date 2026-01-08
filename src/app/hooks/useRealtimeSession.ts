@@ -20,6 +20,7 @@ export interface ConnectOptions {
   initialAgents: RealtimeAgent[];
   audioElement?: HTMLAudioElement;
   extraContext?: Record<string, any>;
+  onUpdateSessionTools?: (tools: any[]) => void;
   outputGuardrails?: any[];
 }
 
@@ -116,6 +117,7 @@ export function useRealtimeSession(callbacks: RealtimeSessionCallbacks = {}) {
       initialAgents,
       audioElement,
       extraContext,
+      onUpdateSessionTools,
       outputGuardrails,
     }: ConnectOptions) => {
       if (sessionRef.current) return; // already connected
@@ -141,7 +143,10 @@ export function useRealtimeSession(callbacks: RealtimeSessionCallbacks = {}) {
           },
         },
         outputGuardrails: outputGuardrails ?? [],
-        context: extraContext ?? {},
+        context: {
+          ...(extraContext ?? {}),
+          updateSessionTools: onUpdateSessionTools,
+        },
       });
 
       await sessionRef.current.connect({ apiKey: ek });

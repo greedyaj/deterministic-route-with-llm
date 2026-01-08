@@ -18,21 +18,25 @@ import type { RealtimeAgent } from '@openai/agents/realtime';
 import { useTranscript } from "@/app/contexts/TranscriptContext";
 import { useEvent } from "@/app/contexts/EventContext";
 import { useRealtimeSession } from "./hooks/useRealtimeSession";
+import { buildSessionToolUpdateEvent } from "@/app/lib/realtimeSessionTools";
 import { createModerationGuardrail } from "@/app/agentConfigs/guardrails";
 
 // Agent configs
 import { allAgentSets, defaultAgentSetKey } from "@/app/agentConfigs";
 import { customerServiceRetailScenario } from "@/app/agentConfigs/customerServiceRetail";
 import { chatSupervisorScenario } from "@/app/agentConfigs/chatSupervisor";
+import { deterministicRouterScenario } from "@/app/agentConfigs/deterministicRouter";
 import { customerServiceRetailCompanyName } from "@/app/agentConfigs/customerServiceRetail";
 import { chatSupervisorCompanyName } from "@/app/agentConfigs/chatSupervisor";
 import { simpleHandoffScenario } from "@/app/agentConfigs/simpleHandoff";
+import { routerToolDefinition } from "@/app/agentConfigs/deterministicRouter/tools";
 
 // Map used by connect logic for scenarios defined via the SDK.
 const sdkScenarioMap: Record<string, RealtimeAgent[]> = {
   simpleHandoff: simpleHandoffScenario,
   customerServiceRetail: customerServiceRetailScenario,
   chatSupervisor: chatSupervisorScenario,
+  deterministicRouter: deterministicRouterScenario,
 };
 
 import useAudioDownload from "./hooks/useAudioDownload";
@@ -40,6 +44,7 @@ import { useHandleSessionHistory } from "./hooks/useHandleSessionHistory";
 
 function App() {
   const searchParams = useSearchParams()!;
+  const agentSetKey = searchParams.get("agentConfig") || "default";
 
   // ---------------------------------------------------------------------
   // Codec selector – lets you toggle between wide-band Opus (48 kHz)
@@ -117,6 +122,11 @@ function App() {
       return stored ? stored === 'true' : true;
     },
   );
+  const [routerStatus, setRouterStatus] = useState<{
+    intent: string;
+    toolCount: number;
+    fallback: string;
+  } | null>(null);
 
   // Initialize the recording hook.
   const { startRecording, stopRecording, downloadRecording } =
@@ -129,6 +139,11 @@ function App() {
     } catch (err) {
       console.error('Failed to send via SDK', err);
     }
+  };
+
+  const handleSessionToolUpdate = (tools: any[]) => {
+    const event = buildSessionToolUpdateEvent(tools);
+    sendClientEvent(event, "session_update_tools");
   };
 
   useHandleSessionHistory();
@@ -195,7 +210,6 @@ function App() {
   };
 
   const connectToRealtime = async () => {
-    const agentSetKey = searchParams.get("agentConfig") || "default";
     if (sdkScenarioMap[agentSetKey]) {
       if (sessionStatus !== "DISCONNECTED") return;
       setSessionStatus("CONNECTING");
@@ -217,15 +231,25 @@ function App() {
           : chatSupervisorCompanyName;
         const guardrail = createModerationGuardrail(companyName);
 
+        const extraContext = {
+          addTranscriptBreadcrumb,
+          ...(agentSetKey === "deterministicRouter"
+            ? { allowedToolNames: [], setRouterStatus }
+            : {}),
+        };
+
         await connect({
           getEphemeralKey: async () => EPHEMERAL_KEY,
           initialAgents: reorderedAgents,
           audioElement: sdkAudioElement,
+          onUpdateSessionTools: handleSessionToolUpdate,
           outputGuardrails: [guardrail],
-          extraContext: {
-            addTranscriptBreadcrumb,
-          },
+          extraContext,
         });
+
+        if (agentSetKey === "deterministicRouter") {
+          handleSessionToolUpdate([routerToolDefinition]);
+        }
       } catch (err) {
         console.error("Error connecting via SDK:", err);
         setSessionStatus("DISCONNECTED");
@@ -233,6 +257,12 @@ function App() {
       return;
     }
   };
+
+  useEffect(() => {
+    if (agentSetKey !== "deterministicRouter") {
+      setRouterStatus(null);
+    }
+  }, [agentSetKey]);
 
   const disconnectFromRealtime = () => {
     disconnect();
@@ -430,7 +460,6 @@ function App() {
     };
   }, [sessionStatus]);
 
-  const agentSetKey = searchParams.get("agentConfig") || "default";
 
   return (
     <div className="text-base flex flex-col h-screen bg-gray-100 text-gray-800 relative">
@@ -510,6 +539,17 @@ function App() {
                   </svg>
                 </div>
               </div>
+            </div>
+          )}
+
+          {agentSetKey === "deterministicRouter" && (
+            <div className="flex items-center ml-6 text-sm text-gray-700">
+              <span className="font-medium mr-2">Router</span>
+              <span className="rounded border border-gray-300 px-2 py-1">
+                {routerStatus
+                  ? `intent: ${routerStatus.intent} | tools: ${routerStatus.toolCount} | fallback: ${routerStatus.fallback}`
+                  : "pending"}
+              </span>
             </div>
           )}
         </div>
