@@ -76,13 +76,20 @@ export function useHandleSessionHistory() {
       `function call: ${function_name}`,
       function_args
     );    
+
+    if (function_name && function_name !== "router") {
+      addTranscriptBreadcrumb(`tool selected by model: ${function_name}`);
+    }
   }
   function handleAgentToolEnd(details: any, _agent: any, _functionCall: any, result: any) {
     const lastFunctionCall = extractFunctionCallByName(_functionCall.name, details?.context?.history);
-    addTranscriptBreadcrumb(
-      `function call result: ${lastFunctionCall?.name}`,
-      maybeParseJson(result)
-    );
+    const parsedResult = maybeParseJson(result);
+    const functionName = lastFunctionCall?.name;
+    let title = `function call result: ${functionName}`;
+    if (functionName === "router" && parsedResult && Array.isArray(parsedResult.tools)) {
+      title = `${title} (tools: ${parsedResult.tools.length})`;
+    }
+    addTranscriptBreadcrumb(title, parsedResult);
   }
 
   function handleHistoryAdded(item: any) {
