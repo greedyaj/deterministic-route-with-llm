@@ -9,13 +9,13 @@ Validate deterministic routing quality and provide visibility for iteration.
 - no-match correctness
 
 ## Logging Fields
-- input utterance
+- intent phrase (from RT LLM) and optional raw utterance
 - routed tools and scores
 - tool selected by RT LLM
 - outcome (success/failure)
 
 ## Evaluation Harness Shape
-- Scripted runner that feeds gold utterances into the router
+- Scripted runner that feeds gold intent phrases into the router (using example utterances as proxies)
 - Aggregates metrics per domain and per operation
 - Outputs a summary report (JSON + console table)
 

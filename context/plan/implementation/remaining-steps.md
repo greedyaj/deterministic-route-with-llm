@@ -16,4 +16,4 @@
 
 ## Testing
 9. Add a quick manual test checklist and example utterances for the deterministicRouter scenario. (done)
-10. Run the evaluation endpoint and confirm non-zero recall on the gold examples.
+10. Run the evaluation endpoint and confirm non-zero recall on the gold examples. (done: recall@K=1.0)
