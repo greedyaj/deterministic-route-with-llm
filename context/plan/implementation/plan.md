@@ -37,6 +37,6 @@
 22. Decide the test harness shape and inputs (manual + scripted). (done)
 
 ## Phase 8: Rollout and Iteration
-23. Review routing accuracy on the gold set; tune weights and thresholds.
-24. Freeze the scoring configuration for deterministic behavior.
-25. Document operating guidelines for adding new tools.
+23. Review routing accuracy on the gold set; tune weights and thresholds. (done)
+24. Freeze the scoring configuration for deterministic behavior. (done)
+25. Document operating guidelines for adding new tools. (done)
