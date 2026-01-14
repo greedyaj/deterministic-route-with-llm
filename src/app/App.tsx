@@ -25,7 +25,10 @@ import { createModerationGuardrail } from "@/app/agentConfigs/guardrails";
 import { allAgentSets, defaultAgentSetKey } from "@/app/agentConfigs";
 import { customerServiceRetailScenario } from "@/app/agentConfigs/customerServiceRetail";
 import { chatSupervisorScenario } from "@/app/agentConfigs/chatSupervisor";
-import { deterministicRouterScenario } from "@/app/agentConfigs/deterministicRouter";
+import {
+  deterministicRouterScenario,
+  deterministicRouterInstructions,
+} from "@/app/agentConfigs/deterministicRouter";
 import { customerServiceRetailCompanyName } from "@/app/agentConfigs/customerServiceRetail";
 import { chatSupervisorCompanyName } from "@/app/agentConfigs/chatSupervisor";
 import { simpleHandoffScenario } from "@/app/agentConfigs/simpleHandoff";
@@ -186,6 +189,12 @@ function App() {
     const event = buildSessionToolUpdateEvent(tools);
     sendClientEvent(event, "session_update_tools");
   };
+  const handleSessionInstructionUpdate = (instructions: string) => {
+    sendClientEvent(
+      { type: "session.update", session: { instructions } },
+      "session_update_instructions"
+    );
+  };
 
   useHandleSessionHistory();
 
@@ -280,6 +289,8 @@ function App() {
                 setRouterStatus,
                 getRouterMatchStrategy: () => routerMatchStrategyRef.current,
                 getEmbeddingsProvider,
+                updateSessionInstructions: handleSessionInstructionUpdate,
+                routerBaseInstructions: deterministicRouterInstructions,
               }
             : {}),
         };

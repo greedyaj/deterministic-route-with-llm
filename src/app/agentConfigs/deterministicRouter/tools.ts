@@ -56,6 +56,7 @@ export const routerTool = tool({
   description: routerToolDefinition.description,
   parameters: routerToolDefinition.parameters,
   execute: async (input, details) => {
+    const context = details?.context as any;
     const request = input as RouterRequest;
     const getRouterMatchStrategy = context?.getRouterMatchStrategy as
       | (() => RouterMatchStrategy)
@@ -74,10 +75,16 @@ export const routerTool = tool({
           : undefined,
     });
 
-    const context = details?.context as any;
     const updateSessionTools = context?.updateSessionTools as
       | ((tools: Tool[]) => void)
       | undefined;
+    const updateSessionInstructions = context?.updateSessionInstructions as
+      | ((instructions: string) => void)
+      | undefined;
+    const routerBaseInstructions =
+      typeof context?.routerBaseInstructions === "string"
+        ? context.routerBaseInstructions
+        : "";
     const setRouterStatus = context?.setRouterStatus as
       | ((status: { intent: string; toolCount: number; fallback: string }) => void)
       | undefined;
@@ -88,6 +95,12 @@ export const routerTool = tool({
       context.allowedToolNames = response.tools.map((toolItem) => toolItem.name);
     }
     context.activeIntent = response.intent;
+    if (typeof updateSessionInstructions === "function" && routerBaseInstructions) {
+      const intentNote = response.intent
+        ? `\n\n# Active Intent\nCurrent intent: ${response.intent}\nIf the next user message suggests a different intent, call router before any other tool.`
+        : "";
+      updateSessionInstructions(`${routerBaseInstructions}${intentNote}`);
+    }
     if (typeof setRouterStatus === "function") {
       setRouterStatus({
         intent: response.intent,
