@@ -83,6 +83,12 @@ function App() {
   const [selectedAgentConfigSet, setSelectedAgentConfigSet] = useState<
     RealtimeAgent[] | null
   >(null);
+  const routerStrategyParam = searchParams.get("routerStrategy");
+  const initialRouterStrategy = ROUTER_MATCH_STRATEGIES.includes(
+    routerStrategyParam as RouterMatchStrategy
+  )
+    ? (routerStrategyParam as RouterMatchStrategy)
+    : ROUTER_MATCH_STRATEGY;
 
   const audioElementRef = useRef<HTMLAudioElement | null>(null);
   // Ref to identify whether the latest agent switch came from an automatic handoff
@@ -140,7 +146,7 @@ function App() {
     fallback: string;
   } | null>(null);
   const [routerMatchStrategy, setRouterMatchStrategy] =
-    useState<RouterMatchStrategy>(ROUTER_MATCH_STRATEGY);
+    useState<RouterMatchStrategy>(initialRouterStrategy);
   const routerMatchStrategyRef = useRef<RouterMatchStrategy>(ROUTER_MATCH_STRATEGY);
   const embeddingsProviderRef = useRef<EmbeddingsProvider | null>(null);
 
@@ -151,6 +157,15 @@ function App() {
   useEffect(() => {
     routerMatchStrategyRef.current = routerMatchStrategy;
   }, [routerMatchStrategy]);
+
+  useEffect(() => {
+    if (!routerStrategyParam) {
+      return;
+    }
+    if (ROUTER_MATCH_STRATEGIES.includes(routerStrategyParam as RouterMatchStrategy)) {
+      setRouterMatchStrategy(routerStrategyParam as RouterMatchStrategy);
+    }
+  }, [routerStrategyParam]);
 
   const getEmbeddingsProvider = () => {
     if (!embeddingsProviderRef.current) {
@@ -430,6 +445,16 @@ function App() {
     // connectToRealtime will be triggered by effect watching selectedAgentName
   };
 
+  const handleRouterStrategyChange = (
+    event: React.ChangeEvent<HTMLSelectElement>
+  ) => {
+    const nextStrategy = event.target.value as RouterMatchStrategy;
+    setRouterMatchStrategy(nextStrategy);
+    const url = new URL(window.location.toString());
+    url.searchParams.set("routerStrategy", nextStrategy);
+    window.location.replace(url.toString());
+  };
+
   // Because we need a new connection, refresh the page when codec changes
   const handleCodecChange = (newCodec: string) => {
     const url = new URL(window.location.toString());
@@ -612,9 +637,7 @@ function App() {
                 <div className="relative">
                   <select
                     value={routerMatchStrategy}
-                    onChange={(event) =>
-                      setRouterMatchStrategy(event.target.value as RouterMatchStrategy)
-                    }
+                    onChange={handleRouterStrategyChange}
                     className="appearance-none border border-gray-300 rounded-lg text-sm px-2 py-1 pr-7 cursor-pointer font-normal focus:outline-none"
                   >
                     {ROUTER_MATCH_STRATEGIES.map((strategy) => (
