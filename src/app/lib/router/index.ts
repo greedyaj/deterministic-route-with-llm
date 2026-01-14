@@ -1,12 +1,17 @@
 import type { ToolRegistry } from "../registry/types";
 import type { RouterCandidateTool, RouterRequest, RouterResponse } from "./types";
-import { scoreToolMatch } from "./scoring";
 import { selectTopTools } from "./selector";
 import { decideFallback } from "./fallback";
 import { deriveIntent } from "./intent";
 import { buildToolIndex } from "../registry/indexer";
+import { getToolMatchScorer } from "./matcher";
+import type { RouterMatchStrategy } from "./matcher";
 
-export function routeTools(request: RouterRequest, registry: ToolRegistry): RouterResponse {
+export function routeTools(
+  request: RouterRequest,
+  registry: ToolRegistry,
+  strategy?: RouterMatchStrategy
+): RouterResponse {
   const query = (request.intent ?? request.utterance ?? "").trim();
   if (!query) {
     return {
@@ -16,6 +21,7 @@ export function routeTools(request: RouterRequest, registry: ToolRegistry): Rout
     };
   }
   const index = buildToolIndex(registry);
+  const scoreToolMatch = getToolMatchScorer(strategy);
   const scored = index.entries.map((tool) => {
     const scoreResult = scoreToolMatch(query, tool);
     return {

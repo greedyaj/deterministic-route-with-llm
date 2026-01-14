@@ -1,5 +1,6 @@
 export const ROUTER_MAX_TOOLS = 20;
 export const ROUTER_MIN_SCORE = 0.25;
+export const ROUTER_MATCH_STRATEGY = "lexical" as const;
 
 export const ROUTER_SCORE_WEIGHTS = {
   token: 0.4,

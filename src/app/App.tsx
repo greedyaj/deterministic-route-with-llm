@@ -30,6 +30,11 @@ import { customerServiceRetailCompanyName } from "@/app/agentConfigs/customerSer
 import { chatSupervisorCompanyName } from "@/app/agentConfigs/chatSupervisor";
 import { simpleHandoffScenario } from "@/app/agentConfigs/simpleHandoff";
 import { routerToolDefinition } from "@/app/agentConfigs/deterministicRouter/tools";
+import { ROUTER_MATCH_STRATEGY } from "@/app/lib/router/config";
+import {
+  ROUTER_MATCH_STRATEGIES,
+  type RouterMatchStrategy,
+} from "@/app/lib/router/matcher";
 
 // Map used by connect logic for scenarios defined via the SDK.
 const sdkScenarioMap: Record<string, RealtimeAgent[]> = {
@@ -127,10 +132,17 @@ function App() {
     toolCount: number;
     fallback: string;
   } | null>(null);
+  const [routerMatchStrategy, setRouterMatchStrategy] =
+    useState<RouterMatchStrategy>(ROUTER_MATCH_STRATEGY);
+  const routerMatchStrategyRef = useRef<RouterMatchStrategy>(ROUTER_MATCH_STRATEGY);
 
   // Initialize the recording hook.
   const { startRecording, stopRecording, downloadRecording } =
     useAudioDownload();
+
+  useEffect(() => {
+    routerMatchStrategyRef.current = routerMatchStrategy;
+  }, [routerMatchStrategy]);
 
   const sendClientEvent = (eventObj: any, eventNameSuffix = "") => {
     try {
@@ -234,7 +246,11 @@ function App() {
         const extraContext = {
           addTranscriptBreadcrumb,
           ...(agentSetKey === "deterministicRouter"
-            ? { allowedToolNames: [], setRouterStatus }
+            ? {
+                allowedToolNames: [],
+                setRouterStatus,
+                getRouterMatchStrategy: () => routerMatchStrategyRef.current,
+              }
             : {}),
         };
 
@@ -550,6 +566,37 @@ function App() {
                   ? `intent: ${routerStatus.intent} | tools: ${routerStatus.toolCount} | fallback: ${routerStatus.fallback}`
                   : "pending"}
               </span>
+              <div className="ml-3 flex items-center">
+                <span className="mr-2">Strategy</span>
+                <div className="relative">
+                  <select
+                    value={routerMatchStrategy}
+                    onChange={(event) =>
+                      setRouterMatchStrategy(event.target.value as RouterMatchStrategy)
+                    }
+                    className="appearance-none border border-gray-300 rounded-lg text-sm px-2 py-1 pr-7 cursor-pointer font-normal focus:outline-none"
+                  >
+                    {ROUTER_MATCH_STRATEGIES.map((strategy) => (
+                      <option key={strategy} value={strategy}>
+                        {strategy}
+                      </option>
+                    ))}
+                  </select>
+                  <div className="pointer-events-none absolute inset-y-0 right-0 flex items-center pr-2 text-gray-600">
+                    <svg
+                      className="h-4 w-4"
+                      viewBox="0 0 20 20"
+                      fill="currentColor"
+                    >
+                      <path
+                        fillRule="evenodd"
+                        d="M5.23 7.21a.75.75 0 011.06.02L10 10.44l3.71-3.21a.75.75 0 111.04 1.08l-4.25 3.65a.75.75 0 01-1.04 0L5.21 8.27a.75.75 0 01.02-1.06z"
+                        clipRule="evenodd"
+                      />
+                    </svg>
+                  </div>
+                </div>
+              </div>
             </div>
           )}
         </div>
