@@ -13,6 +13,6 @@ export async function POST(request: Request) {
   }
 
   const registry = getToolRegistry();
-  const response = routeTools(body, registry);
+  const response = await routeTools(body, registry);
   return NextResponse.json(response);
 }

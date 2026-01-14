@@ -1,7 +1,7 @@
 import { getToolRegistry } from "../registry";
 import { evaluateRouterOnRegistry } from "./evaluate";
 
-export function runRouterEvaluation() {
+export async function runRouterEvaluation() {
   const registry = getToolRegistry();
-  return evaluateRouterOnRegistry(registry);
+  return await evaluateRouterOnRegistry(registry);
 }

@@ -5,6 +5,6 @@ import { evaluateRouterOnRegistry } from "@/app/lib/router/evaluate";
 
 export async function GET() {
   const registry = getToolRegistry();
-  const summary = evaluateRouterOnRegistry(registry);
+  const summary = await evaluateRouterOnRegistry(registry);
   return NextResponse.json(summary);
 }

@@ -3,6 +3,7 @@ import { tool } from "@openai/agents/realtime";
 import registryData from "@/app/data/tools/registry.json";
 import { routeTools } from "@/app/lib/router";
 import type { RouterMatchStrategy } from "@/app/lib/router/matcher";
+import type { EmbeddingsProvider } from "@/app/lib/router/embeddings";
 import type { RouterRequest } from "@/app/lib/router/types";
 import type { ToolRegistry } from "@/app/lib/registry/types";
 import type { Tool } from "@/app/types";
@@ -59,13 +60,19 @@ export const routerTool = tool({
     const getRouterMatchStrategy = context?.getRouterMatchStrategy as
       | (() => RouterMatchStrategy)
       | undefined;
-    const response = routeTools(
-      request,
-      registry,
-      typeof getRouterMatchStrategy === "function"
-        ? getRouterMatchStrategy()
-        : undefined
-    );
+    const getEmbeddingsProvider = context?.getEmbeddingsProvider as
+      | (() => EmbeddingsProvider)
+      | undefined;
+    const response = await routeTools(request, registry, {
+      strategy:
+        typeof getRouterMatchStrategy === "function"
+          ? getRouterMatchStrategy()
+          : undefined,
+      embeddingsProvider:
+        typeof getEmbeddingsProvider === "function"
+          ? getEmbeddingsProvider()
+          : undefined,
+    });
 
     const context = details?.context as any;
     const updateSessionTools = context?.updateSessionTools as

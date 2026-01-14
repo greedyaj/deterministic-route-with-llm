@@ -21,10 +21,10 @@ export interface EvaluationSummary {
   failures: EvaluationFailure[];
 }
 
-export function evaluateRouterOnRegistry(
+export async function evaluateRouterOnRegistry(
   registry: ToolRegistry,
   maxFailures = 50
-): EvaluationSummary {
+): Promise<EvaluationSummary> {
   let totalUtterances = 0;
   let correctAtK = 0;
   let totalReturned = 0;
@@ -33,7 +33,7 @@ export function evaluateRouterOnRegistry(
   for (const tool of registry.tools) {
     for (const utterance of tool.examples) {
       totalUtterances += 1;
-      const response = routeTools({ intent: utterance, utterance }, registry);
+      const response = await routeTools({ intent: utterance, utterance }, registry);
       totalReturned += response.tools.length;
       const rank = response.tools.findIndex((candidate) => candidate.name === tool.name);
       const matched = rank >= 0;

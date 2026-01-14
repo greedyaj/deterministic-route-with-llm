@@ -4,8 +4,8 @@ import type { ToolScoreResult } from "./scoring";
 import { scoreToolMatch } from "./scoring";
 import { buildTfidfIndex, scoreToolMatchTfidf } from "./tfidf";
 
-export type RouterMatchStrategy = "lexical" | "tfidf";
-export const ROUTER_MATCH_STRATEGIES: RouterMatchStrategy[] = ["lexical", "tfidf"];
+export type RouterMatchStrategy = "lexical" | "tfidf" | "embeddings";
+export const ROUTER_MATCH_STRATEGIES: RouterMatchStrategy[] = ["lexical", "tfidf", "embeddings"];
 export type ToolMatchScorer = (utterance: string, tool: ToolIndexEntry) => ToolScoreResult;
 
 export function getToolMatchScorer(
@@ -13,6 +13,8 @@ export function getToolMatchScorer(
   toolIndex?: ToolIndex
 ): ToolMatchScorer {
   switch (strategy) {
+    case "embeddings":
+      return scoreToolMatch;
     case "tfidf": {
       if (!toolIndex) {
         return scoreToolMatch;

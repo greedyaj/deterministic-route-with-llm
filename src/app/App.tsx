@@ -30,11 +30,15 @@ import { customerServiceRetailCompanyName } from "@/app/agentConfigs/customerSer
 import { chatSupervisorCompanyName } from "@/app/agentConfigs/chatSupervisor";
 import { simpleHandoffScenario } from "@/app/agentConfigs/simpleHandoff";
 import { routerToolDefinition } from "@/app/agentConfigs/deterministicRouter/tools";
-import { ROUTER_MATCH_STRATEGY } from "@/app/lib/router/config";
+import {
+  ROUTER_EMBEDDING_MODEL,
+  ROUTER_MATCH_STRATEGY,
+} from "@/app/lib/router/config";
 import {
   ROUTER_MATCH_STRATEGIES,
   type RouterMatchStrategy,
 } from "@/app/lib/router/matcher";
+import type { EmbeddingsProvider } from "@/app/lib/router/embeddings";
 
 // Map used by connect logic for scenarios defined via the SDK.
 const sdkScenarioMap: Record<string, RealtimeAgent[]> = {
@@ -135,6 +139,7 @@ function App() {
   const [routerMatchStrategy, setRouterMatchStrategy] =
     useState<RouterMatchStrategy>(ROUTER_MATCH_STRATEGY);
   const routerMatchStrategyRef = useRef<RouterMatchStrategy>(ROUTER_MATCH_STRATEGY);
+  const embeddingsProviderRef = useRef<EmbeddingsProvider | null>(null);
 
   // Initialize the recording hook.
   const { startRecording, stopRecording, downloadRecording } =
@@ -143,6 +148,30 @@ function App() {
   useEffect(() => {
     routerMatchStrategyRef.current = routerMatchStrategy;
   }, [routerMatchStrategy]);
+
+  const getEmbeddingsProvider = () => {
+    if (!embeddingsProviderRef.current) {
+      embeddingsProviderRef.current = {
+        model: ROUTER_EMBEDDING_MODEL,
+        getEmbeddings: async (texts, model) => {
+          const response = await fetch("/api/embeddings", {
+            method: "POST",
+            headers: { "Content-Type": "application/json" },
+            body: JSON.stringify({ texts, model }),
+          });
+          if (!response.ok) {
+            throw new Error("Embedding request failed.");
+          }
+          const data = await response.json();
+          if (!Array.isArray(data?.embeddings)) {
+            throw new Error("Invalid embedding response.");
+          }
+          return data.embeddings as number[][];
+        },
+      };
+    }
+    return embeddingsProviderRef.current;
+  };
 
   const sendClientEvent = (eventObj: any, eventNameSuffix = "") => {
     try {
@@ -250,6 +279,7 @@ function App() {
                 allowedToolNames: [],
                 setRouterStatus,
                 getRouterMatchStrategy: () => routerMatchStrategyRef.current,
+                getEmbeddingsProvider,
               }
             : {}),
         };
