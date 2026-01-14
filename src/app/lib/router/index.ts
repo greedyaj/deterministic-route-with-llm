@@ -21,7 +21,7 @@ export function routeTools(
     };
   }
   const index = buildToolIndex(registry);
-  const scoreToolMatch = getToolMatchScorer(strategy);
+  const scoreToolMatch = getToolMatchScorer(strategy, index);
   const scored = index.entries.map((tool) => {
     const scoreResult = scoreToolMatch(query, tool);
     return {
