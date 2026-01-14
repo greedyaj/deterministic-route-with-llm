@@ -1,5 +1,7 @@
 import { ROUTER_MAX_TOOLS } from "./config";
 import { routeTools } from "./index";
+import type { RouterMatchStrategy } from "./matcher";
+import type { EmbeddingsProvider } from "./embeddings";
 import type { ToolRegistry } from "../registry/types";
 
 export interface EvaluationFailure {
@@ -21,10 +23,17 @@ export interface EvaluationSummary {
   failures: EvaluationFailure[];
 }
 
+export interface EvaluationOptions {
+  maxFailures?: number;
+  strategy?: RouterMatchStrategy;
+  embeddingsProvider?: EmbeddingsProvider;
+}
+
 export async function evaluateRouterOnRegistry(
   registry: ToolRegistry,
-  maxFailures = 50
+  options: EvaluationOptions = {}
 ): Promise<EvaluationSummary> {
+  const maxFailures = options.maxFailures ?? 50;
   let totalUtterances = 0;
   let correctAtK = 0;
   let totalReturned = 0;
@@ -33,7 +42,10 @@ export async function evaluateRouterOnRegistry(
   for (const tool of registry.tools) {
     for (const utterance of tool.examples) {
       totalUtterances += 1;
-      const response = await routeTools({ intent: utterance, utterance }, registry);
+      const response = await routeTools({ intent: utterance, utterance }, registry, {
+        strategy: options.strategy,
+        embeddingsProvider: options.embeddingsProvider,
+      });
       totalReturned += response.tools.length;
       const rank = response.tools.findIndex((candidate) => candidate.name === tool.name);
       const matched = rank >= 0;
